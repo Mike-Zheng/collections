@@ -1,0 +1,405 @@
+{
+  "files": [
+    {
+      "source": "img/btn_fixed_hover.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_normal.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_shine.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_btn.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_social.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_l.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_r.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/designer_dw.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/designer_shine_l.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/designer_shine_r.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_bg_img.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_bg_m.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_bg.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_frame_img.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_img_1.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_img_2.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_img_3.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_img_4.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/gift_img_5.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_bg_bottom_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_bg_bottom.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_bg_top_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_bg_top.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_deco_l.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_deco_r.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_shine_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_shine_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_shine_group_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_shine_group_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_zone.gif",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/highlight_zone.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_bg_bottom_m.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_bg_bottom.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_bg_top_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_bg_top.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_frame_video.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_title_star_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_title_star_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_title_star_3.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_title.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_video_1.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_video_2.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/intro_video_3.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_cloud_l.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_cloud_r.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_logo.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_mist_back.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_mist_front_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_mist_front_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_people_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_people_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_ribbon_back.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_ribbon_front.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_subtitle.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_title_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_title_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_title_shine_1.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_title_shine_2.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/kv_txt.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/logo.svg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_bg.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_1.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_2.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_3.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_4.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_5.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_img_6.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/observe_title.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_co_injelly.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_co_knorr.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_co_salonpas.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_co_supau.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_re_ctrra.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_re_hondao.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_re_suntory.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_title_co.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/partner_title_re.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/index/special_bg.png",
+      "type": "IMAGE",
+      "size": 270.336
+    }
+
+  ]
+}
