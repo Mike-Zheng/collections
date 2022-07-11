@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "source": "img/btn_fixed_hover.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_normal.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_shine.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_btn.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_social.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_l.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_r.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/about/title_unit.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/about/about_suntory.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    }
+
+  ]
+}
