@@ -1,0 +1,120 @@
+{
+  "files": [
+    {
+      "source": "img/btn_fixed_hover.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_normal.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/btn_fixed_shine.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_btn.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/icon_social.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit_m.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/kv_unit.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_l.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/nav_star_r.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/title_unit.png",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/bag.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/bottle.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/coupon.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/health.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/medal_1.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/medal_2.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/medal_3.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/pocket.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/shirt_1.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/shirt_2.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/storage.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/towel.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    },
+    {
+      "source": "img/race/wash.jpg",
+      "type": "IMAGE",
+      "size": 270.336
+    }
+
+  ]
+}
