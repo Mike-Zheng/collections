@@ -1,0 +1,1172 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 9, ../sass/screen.scss */
+body {
+  font-family: 微軟正黑體, Verdana, Helvetica,sans-serif, 'STHeiti Light','Microsoft Yahei','Microsoft JhengHei',新細明體; }
+
+/* line 13, ../sass/screen.scss */
+.animated-object {
+  position: fixed;
+  left: 50%;
+  top: 50%; }
+
+/* line 19, ../sass/screen.scss */
+.section-title {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+
+/* line 28, ../sass/screen.scss */
+.current-scrolling {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  color: rgba(200, 200, 200, 0.8);
+  font-size: 12px; }
+
+/* line 36, ../sass/screen.scss */
+.loading-scene {
+  position: fixed;
+  background: #000;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  background-image: url("../images/background-repeat.png"), url("../images/background-texture.png");
+  background-repeat: repeat, repeat; }
+  /* line 50, ../sass/screen.scss */
+  .loading-scene .loading-progress {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -45px;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+  /* line 60, ../sass/screen.scss */
+  .loading-scene .loading-progress-bar {
+    border-top: 1px dotted rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    top: 50%;
+    overflow: visible !important; }
+    /* line 67, ../sass/screen.scss */
+    .loading-scene .loading-progress-bar .loading-star {
+      position: absolute;
+      right: -50px;
+      top: -23px;
+      width: 45px;
+      height: 45px;
+      background: url("../images/star.png");
+      -webkit-animation: rotating 6s linear infinite; }
+
+@-webkit-keyframes rotating {
+  /* line 80, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  /* line 83, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+/* line 1, ../sass/_basic.scss */
+.logo {
+  position: fixed;
+  width: 256px;
+  height: 500px;
+  margin-left: -100px;
+  margin-top: -300px;
+  left: 50%;
+  top: 50%; }
+  /* line 9, ../sass/_basic.scss */
+  .logo img {
+    width: 100%;
+    height: 100%; }
+
+/* line 15, ../sass/_basic.scss */
+.blue {
+  color: #18a79f; }
+
+/* line 16, ../sass/_basic.scss */
+.red {
+  color: #df5a54; }
+
+/* line 18, ../sass/_basic.scss */
+.scrolldown {
+  text-align: center;
+  margin-left: -106px;
+  width: 213px;
+  height: 54px;
+  background: url("../images/scrolldown.png");
+  top: auto;
+  bottom: 5px; }
+
+/* line 28, ../sass/_basic.scss */
+.space-background {
+  position: fixed;
+  width: 100%;
+  height: 30000px;
+  left: 0%;
+  background-color: #122450;
+  background-image: url("../images/background-repeat.png"), url("../images/background-texture.png");
+  background-repeat: repeat,  repeat; }
+
+/* line 40, ../sass/_basic.scss */
+a.homelogo {
+  display: block;
+  bottom: 85px;
+  width: 205px;
+  height: 30px;
+  top: auto; }
+  /* line 47, ../sass/_basic.scss */
+  a.homelogo.homelogo--fourdesire {
+    margin-left: -255px;
+    background: url("../images/homelogos.png") 0px 0px;
+    opacity: 0.5; }
+  /* line 53, ../sass/_basic.scss */
+  a.homelogo.homelogo--googlechrome {
+    margin-left: -75px;
+    background: url("../images/homelogos.png") 0px -30px; }
+  /* line 58, ../sass/_basic.scss */
+  a.homelogo.homelogo--bigcat {
+    margin-left: 75px;
+    background: url("../images/homelogos.png") 0px -60px;
+    opacity: 0.5; }
+
+/* line 67, ../sass/_basic.scss */
+.star-front-background,
+.star-back-background,
+.star-far-background {
+  position: fixed;
+  width: 1680px;
+  height: 1085px;
+  background: url("../images/background-star-1.png") no-repeat;
+  margin-left: -840px;
+  left: 50%;
+  top: 0%; }
+  /* line 80, ../sass/_basic.scss */
+  .star-front-background.star-back-background,
+  .star-back-background.star-back-background,
+  .star-far-background.star-back-background {
+    background: url("../images/background-star-2.png") no-repeat; }
+  /* line 85, ../sass/_basic.scss */
+  .star-front-background.star-far-background,
+  .star-back-background.star-far-background,
+  .star-far-background.star-far-background {
+    background: url("../images/background-star-3.png") no-repeat; }
+
+/* line 90, ../sass/_basic.scss */
+.little-scissors {
+  width: 189px;
+  height: 250px;
+  background-image: url("../images/girl-animation.png");
+  background-repeat: no-repeat;
+  margin-left: -95px;
+  margin-top: -125px; }
+
+/* line 99, ../sass/_basic.scss */
+.screen-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  background: black;
+  z-index: 99;
+  display: none; }
+
+/* line 110, ../sass/_basic.scss */
+.screenlight {
+  position: fixed;
+  width: 2000px;
+  height: 900px;
+  left: 50%;
+  top: 50%;
+  margin-left: -1000px;
+  margin-top: -450px;
+  background-image: url("../images/screen_all_400.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  z-index: 101;
+  display: none; }
+  /* line 123, ../sass/_basic.scss */
+  .screenlight.fixed {
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 0px; }
+  /* line 131, ../sass/_basic.scss */
+  .screenlight .screen-content {
+    display: none;
+    position: absolute;
+    width: 920px;
+    height: 496px;
+    left: 50%;
+    top: 50%;
+    margin-left: -456px;
+    margin-top: -297px;
+    border-radius: 15px;
+    overflow: hidden; }
+    /* line 142, ../sass/_basic.scss */
+    .screenlight .screen-content img {
+      width: 100%;
+      height: 100%; }
+    /* line 146, ../sass/_basic.scss */
+    .screenlight .screen-content .play-icon {
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      left: 50%;
+      top: 50%;
+      margin-left: -64px;
+      margin-top: -64px; }
+
+/* line 158, ../sass/_basic.scss */
+.teaser-title {
+  color: #18a79f;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  margin-left: -300px;
+  margin-top: 250px;
+  width: 600px;
+  text-align: center;
+  font-size: 32px;
+  opacity: 0;
+  z-index: 10000; }
+  /* line 168, ../sass/_basic.scss */
+  .teaser-title a.on-vimeo {
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 22px;
+    text-decoration: none; }
+
+/* line 3, ../sass/_storyline.scss */
+.section-title--storyline {
+  margin-left: -100px;
+  margin-top: 265px;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+
+/* line 11, ../sass/_storyline.scss */
+.storyline-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 409px;
+  height: 658px;
+  background: url("../images/storyline-background.png.html") no-repeat;
+  line-height: 1.7;
+  font-size: 14px;
+  padding: 70px 70px;
+  color: #fff; }
+
+/* line 23, ../sass/_storyline.scss */
+.storyline-description {
+  width: 800px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -400px; }
+  /* line 28, ../sass/_storyline.scss */
+  .storyline-description h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    text-align: center;
+    color: #fff;
+    margin-top: -200px;
+    margin-left: -400px;
+    font-size: 38px;
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+  /* line 41, ../sass/_storyline.scss */
+  .storyline-description p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 680px;
+    color: #fff;
+    margin-left: -340px;
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+    line-height: 1.7;
+    letter-spacing: 0.1em; }
+
+/* line 55, ../sass/_storyline.scss */
+.moon {
+  width: 500px;
+  height: 500px;
+  background: url("../images/moon.png");
+  margin-left: 80px;
+  margin-top: 240px; }
+
+/* line 3, ../sass/_charactors.scss */
+.section-title--charactor {
+  text-align: center;
+  margin-top: 330px;
+  margin-left: -300px;
+  width: 600px; }
+
+/* line 10, ../sass/_charactors.scss */
+.charactor-scene__father {
+  width: 76px;
+  height: 620px;
+  background: url("../images/charactor-father.png");
+  display: none; }
+
+/* line 17, ../sass/_charactors.scss */
+.charactor-scene__spider {
+  width: 262px;
+  height: 500px;
+  background: url("../images/charactor-spider.png");
+  display: none; }
+
+/* line 24, ../sass/_charactors.scss */
+.charactor-scene__snail {
+  width: 200px;
+  height: 117px;
+  background: url("../images/charactor-snail.png");
+  display: none; }
+
+/* line 31, ../sass/_charactors.scss */
+.charactor-scene__teacher {
+  width: 188px;
+  height: 333px;
+  background: url("../images/charactor-teacher.png");
+  display: none; }
+
+/* line 38, ../sass/_charactors.scss */
+.charactor-scene__driver {
+  width: 315px;
+  height: 400px;
+  background: url("../images/charactor-driver.png");
+  display: none; }
+
+/* line 45, ../sass/_charactors.scss */
+.charactor-scene__monster {
+  width: 619px;
+  height: 550px;
+  background: url("../images/charactor-monster.png");
+  display: none; }
+
+/* line 52, ../sass/_charactors.scss */
+.charactor-scene__alien {
+  width: 302px;
+  height: 160px;
+  background: url("../images/charactor-alien.png");
+  display: none; }
+
+/* line 59, ../sass/_charactors.scss */
+.charactor-intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  opacity: 0;
+  display: none;
+  padding: 20px;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+  /* line 70, ../sass/_charactors.scss */
+  .charactor-intro h1 {
+    font-size: 20px;
+    color: #18a79f; }
+  /* line 74, ../sass/_charactors.scss */
+  .charactor-intro p {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-top: 15px; }
+
+/* line 81, ../sass/_charactors.scss */
+.charactor-intro--scissors {
+  margin-left: -480px;
+  margin-top: -90px;
+  width: 200px; }
+
+/* line 87, ../sass/_charactors.scss */
+.charactor-intro--father {
+  margin-left: -430px;
+  margin-top: -280px;
+  width: 200px; }
+
+/* line 93, ../sass/_charactors.scss */
+.charactor-intro--spider {
+  margin-left: 200px;
+  margin-top: -200px;
+  width: 200px; }
+
+/* line 99, ../sass/_charactors.scss */
+.charactor-intro--snail {
+  margin-left: 250px;
+  margin-top: -0px;
+  width: 220px; }
+
+/* line 105, ../sass/_charactors.scss */
+.charactor-intro--teacher {
+  margin-left: 65px;
+  margin-top: -150px;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  padding-top: 70px; }
+
+/* line 114, ../sass/_charactors.scss */
+.charactor-intro--driver {
+  margin-left: 120px;
+  margin-top: -220px;
+  width: 160px;
+  height: 160px;
+  padding-top: 70px; }
+
+/* line 122, ../sass/_charactors.scss */
+.charactor-intro--monster {
+  margin-left: 120px;
+  margin-top: 5px;
+  width: 200px;
+  height: 200px;
+  padding-top: 90px; }
+
+/* line 130, ../sass/_charactors.scss */
+.charactor-line {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%; }
+  /* line 135, ../sass/_charactors.scss */
+  .charactor-line .line {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    border-top: 1px dashed rgba(255, 255, 255, 0.13); }
+  /* line 142, ../sass/_charactors.scss */
+  .charactor-line .star {
+    background: rgba(255, 255, 0, 0.5);
+    width: 10px;
+    height: 10px;
+    -webkit-transform: scale(0.5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(255, 255, 0, 0.3); }
+  /* line 150, ../sass/_charactors.scss */
+  .charactor-line .star:first-child {
+    left: -13px;
+    top: -4px;
+    position: absolute; }
+  /* line 155, ../sass/_charactors.scss */
+  .charactor-line .star:last-child {
+    right: -13px;
+    top: -4px;
+    position: absolute; }
+  /* line 160, ../sass/_charactors.scss */
+  .charactor-line .star--big--right {
+    position: absolute;
+    background: url("../images/star.png");
+    width: 45px;
+    height: 45px;
+    right: -50px;
+    top: -20px; }
+  /* line 169, ../sass/_charactors.scss */
+  .charactor-line .star--big--left {
+    position: absolute;
+    background: url("../images/star.png");
+    width: 45px;
+    height: 45px;
+    left: -50px;
+    top: -20px; }
+
+/* line 3, ../sass/_sketch.scss */
+.sketch-area--top {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  width: 4500px;
+  height: 460px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+  /* line 11, ../sass/_sketch.scss */
+  .sketch-area--top img {
+    height: 100%;
+    float: right; }
+
+/* line 17, ../sass/_sketch.scss */
+.sketch-area--bottom {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  width: 5800px;
+  height: 460px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg); }
+  /* line 25, ../sass/_sketch.scss */
+  .sketch-area--bottom img {
+    height: 100%;
+    float: right; }
+
+/* line 31, ../sass/_sketch.scss */
+.sketch-tissue {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 200px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%; }
+  /* line 42, ../sass/_sketch.scss */
+  .sketch-tissue img {
+    position: absolute;
+    width: 300px;
+    left: -140px;
+    top: -170px; }
+  /* line 48, ../sass/_sketch.scss */
+  .sketch-tissue .sketch-title {
+    -webkit-transform: skew(16deg);
+    -moz-transform: skew(16deg);
+    -ms-transform: skew(16deg);
+    -o-transform: skew(16deg);
+    transform: skew(16deg);
+    position: absolute;
+    left: 80px;
+    bottom: 21px;
+    font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體; }
+
+/* line 3, ../sass/_tech.scss */
+.girl-render-title {
+  color: #df5a54;
+  margin-top: -250px;
+  margin-left: 100px;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  font-size: 36px;
+  text-align: right;
+  width: 360px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-right: 1px solid #df5a54; }
+
+/* line 17, ../sass/_tech.scss */
+.tech-divider {
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  left: 0%;
+  top: 50%; }
+  /* line 23, ../sass/_tech.scss */
+  .tech-divider .divider-title {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif; }
+    /* line 28, ../sass/_tech.scss */
+    .tech-divider .divider-title.divider-title--before {
+      top: -28px; }
+    /* line 29, ../sass/_tech.scss */
+    .tech-divider .divider-title.divider-title--after {
+      top: 10px; }
+
+/* line 33, ../sass/_tech.scss */
+.tech-description-box {
+  border-left: 1px solid #6ae2e4;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: -60px;
+  margin-top: -80px; }
+  /* line 40, ../sass/_tech.scss */
+  .tech-description-box h1 {
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+    color: #18a79f;
+    font-size: 30px; }
+  /* line 45, ../sass/_tech.scss */
+  .tech-description-box p {
+    font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 500px;
+    margin-top: 20px;
+    letter-spacing: 0.1em; }
+
+/* line 56, ../sass/_tech.scss */
+.tech-description-box--rig {
+  margin-left: -500px; }
+
+/* line 60, ../sass/_tech.scss */
+.girl-wrapper {
+  width: 352px;
+  height: 512px;
+  margin-left: -480px;
+  margin-top: -265px;
+  overflow: hidden; }
+  /* line 66, ../sass/_tech.scss */
+  .girl-wrapper .girl-wireframe, .girl-wrapper .girl-model, .girl-wrapper .girl-rendered, .girl-wrapper .girl-joint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: 0px 0px; }
+  /* line 72, ../sass/_tech.scss */
+  .girl-wrapper .girl-wireframe {
+    background: url("../images/girl-wireframe.png"); }
+  /* line 73, ../sass/_tech.scss */
+  .girl-wrapper .girl-model {
+    background: url("../images/girl-model.png"); }
+  /* line 74, ../sass/_tech.scss */
+  .girl-wrapper .girl-rendered {
+    background: url("../images/girl-rendered.png"); }
+  /* line 75, ../sass/_tech.scss */
+  .girl-wrapper .girl-joint {
+    background: url("../images/girl-joint.png"); }
+
+/* line 78, ../sass/_tech.scss */
+.hud-title {
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  color: #18a79f;
+  font-size: 34px;
+  left: 50%;
+  width: 400px;
+  margin-left: -480px;
+  text-align: right;
+  top: auto;
+  bottom: 35px; }
+
+/* line 90, ../sass/_tech.scss */
+.hud-description {
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  color: white;
+  font-size: 14px;
+  left: 50%;
+  width: 450px;
+  margin-left: -50px;
+  top: auto;
+  bottom: 35px;
+  line-height: 1.4;
+  opacity: 0.8;
+  letter-spacing: 0.1em; }
+
+/* line 104, ../sass/_tech.scss */
+.hud-background {
+  display: none;
+  position: fixed;
+  background: #000;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%; }
+
+/* line 114, ../sass/_tech.scss */
+.girl-rig {
+  display: none;
+  width: 565px;
+  height: 609px;
+  background: url("../images/girl-rig.png");
+  margin-left: -31px;
+  margin-top: -313px; }
+
+/* line 123, ../sass/_tech.scss */
+.girl-hud {
+  display: none;
+  width: 466px;
+  height: 512px;
+  background: url("../images/girl-hud.png");
+  margin-left: 11px;
+  margin-top: -297px;
+  -webkit-transform: scale(1.285);
+  -moz-transform: scale(1.285);
+  -ms-transform: scale(1.285);
+  -o-transform: scale(1.285);
+  transform: scale(1.285); }
+
+/* line 133, ../sass/_tech.scss */
+.hud-timeline {
+  display: none;
+  width: 490px;
+  height: 102px;
+  background: url("../images/hud-timeline.png");
+  margin-left: -245px;
+  margin-top: 160px;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2); }
+
+/* line 143, ../sass/_tech.scss */
+.hud-left {
+  display: none;
+  width: 275px;
+  height: 375px;
+  background: url("../images/hud-left.png");
+  margin-left: -425px;
+  margin-top: -200px;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2); }
+
+/* line 152, ../sass/_tech.scss */
+.hud-right {
+  display: none;
+  width: 226px;
+  height: 288px;
+  background: url("../images/hud-right.png") 0px 0px;
+  margin-left: 200px;
+  margin-top: -200px;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2); }
+
+/* line 162, ../sass/_tech.scss */
+.chondrite-float {
+  -webkit-animation: chondrite-float 6s linear infinite; }
+
+@-webkit-keyframes chondrite-float {
+  /* line 167, ../sass/_tech.scss */
+  0% {
+    -webkit-transform: translate(0px, 0px); }
+
+  /* line 170, ../sass/_tech.scss */
+  25% {
+    -webkit-transform: translate(-4px, -5px) rotate(-5deg); }
+
+  /* line 173, ../sass/_tech.scss */
+  50% {
+    -webkit-transform: translate(3px, 5px); }
+
+  /* line 176, ../sass/_tech.scss */
+  75% {
+    -webkit-transform: translate(2px, -5px) rotate(4deg); }
+
+  /* line 179, ../sass/_tech.scss */
+  100% {
+    -webkit-transform: translate(0px, 0px); } }
+
+/* line 1, ../sass/_storyboard.scss */
+.storyboard-background {
+  width: 1680px;
+  height: 1150px;
+  margin-left: -840px;
+  margin-top: -575px;
+  background: url("../images/storyboard.jpg"); }
+
+/* line 9, ../sass/_storyboard.scss */
+.storyboard {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px; }
+  /* line 19, ../sass/_storyboard.scss */
+  .storyboard .storyboard__top,
+  .storyboard .storyboard__middle,
+  .storyboard .storyboard__bottom {
+    width: 888px;
+    height: 500px;
+    background: url("../images/storyboard.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -444px;
+    margin-top: -751px; }
+    /* line 28, ../sass/_storyboard.scss */
+    .storyboard .storyboard__top.storyboard__middle,
+    .storyboard .storyboard__middle.storyboard__middle,
+    .storyboard .storyboard__bottom.storyboard__middle {
+      margin-top: -250px; }
+    /* line 31, ../sass/_storyboard.scss */
+    .storyboard .storyboard__top.storyboard__bottom,
+    .storyboard .storyboard__middle.storyboard__bottom,
+    .storyboard .storyboard__bottom.storyboard__bottom {
+      margin-top: 251px; }
+  /* line 37, ../sass/_storyboard.scss */
+  .storyboard .mask--top,
+  .storyboard .mask--bottom {
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); }
+    /* line 44, ../sass/_storyboard.scss */
+    .storyboard .mask--top.mask--bottom,
+    .storyboard .mask--bottom.mask--bottom {
+      top: 100%; }
+
+/* line 50, ../sass/_storyboard.scss */
+.render-box-title {
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  color: #18a79f;
+  font-size: 34px;
+  width: 400px;
+  text-align: right;
+  margin-top: -330px;
+  margin-left: -450px; }
+
+/* line 60, ../sass/_storyboard.scss */
+.render-box-description {
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  color: white;
+  font-size: 14px;
+  width: 400px;
+  margin-left: -20px;
+  margin-top: -330px;
+  line-height: 1.4;
+  opacity: 0.8;
+  letter-spacing: 0.1em; }
+
+/* line 72, ../sass/_storyboard.scss */
+.render-box {
+  position: absolute;
+  width: 1510px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-top: -250px;
+  margin-left: -756px;
+  display: none;
+  overflow: hidden; }
+  /* line 82, ../sass/_storyboard.scss */
+  .render-box .render-image {
+    width: 1510px;
+    height: 850px;
+    position: absolute;
+    left: 0%;
+    top: -1px;
+    background-repeat: no-repeat;
+    border-top: 1px solid #fff; }
+    /* line 90, ../sass/_storyboard.scss */
+    .render-box .render-image .render-title {
+      position: absolute;
+      left: 50%;
+      margin-left: -430px;
+      color: #fff;
+      font-family: 'Open Sans Condensed', sans-serif; }
+      /* line 96, ../sass/_storyboard.scss */
+      .render-box .render-image .render-title.render-title--before {
+        top: -28px; }
+      /* line 97, ../sass/_storyboard.scss */
+      .render-box .render-image .render-title.render-title--after {
+        top: 10px; }
+      /* line 98, ../sass/_storyboard.scss */
+      .render-box .render-image .render-title span {
+        margin-right: 5px; }
+
+/* line 105, ../sass/_storyboard.scss */
+.frame-text {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: rgba(100, 100, 100, 0.8);
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+/* line 115, ../sass/_storyboard.scss */
+.frame-text--scene {
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgba(100, 100, 100, 0.8);
+  font-size: 14px;
+  line-height: 1.3;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+/* line 126, ../sass/_storyboard.scss */
+.frame-text--title {
+  text-align: right;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #18a79f;
+  font-size: 32px;
+  line-height: 1.3;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+/* line 3, ../sass/_final.scss */
+.room-background {
+  width: 2042px;
+  height: 1440px;
+  background: url("../images/room.jpg.html");
+  margin-left: -1021px; }
+
+/* line 10, ../sass/_final.scss */
+.girl-room {
+  display: none;
+  width: 600px;
+  height: 640px;
+  background: url("../images/girl-room.png");
+  margin-left: -300px;
+  margin-top: -320px; }
+
+/* line 19, ../sass/_final.scss */
+.house-mask {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  left: 0%;
+  top: 0%; }
+
+/* line 29, ../sass/_final.scss */
+.coming-title {
+  width: 600px;
+  height: 74px;
+  margin-left: -300px;
+  margin-top: -320px;
+  background: url("../images/coming-2014.png"); }
+
+/* line 37, ../sass/_final.scss */
+.coming-text {
+  width: 950px;
+  height: 100px;
+  margin-left: -450px;
+  margin-top: -200px;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif, 微軟正黑體;
+  letter-spacing: 49px; }
+
+/* line 49, ../sass/_final.scss */
+.house {
+  display: none;
+  position: fixed;
+  width: 1680px;
+  height: 301px;
+  background: url("../images/house.png");
+  left: 50%;
+  bottom: 0%; }
+
+/* line 59, ../sass/_final.scss */
+.dawn {
+  position: fixed;
+  width: 2048px;
+  height: 944px;
+  background: url("../images/dawn.png");
+  left: 50%;
+  bottom: 0%;
+  margin-left: -1024px; }
+
+/* line 69, ../sass/_final.scss */
+.cloud-1 {
+  width: 487px;
+  height: 179px;
+  background: url("../images/cloud-1.png");
+  margin-top: -200px;
+  margin-left: -530px; }
+
+/* line 77, ../sass/_final.scss */
+.cloud-2 {
+  width: 824px;
+  height: 335px;
+  background: url("../images/cloud-2.png");
+  margin-top: -600px;
+  margin-left: 30px; }
+
+/* line 85, ../sass/_final.scss */
+.cloud-3 {
+  width: 753px;
+  height: 457px;
+  background: url("../images/cloud-3.png");
+  margin-top: -800px;
+  margin-left: -800px; }
+
+/* line 93, ../sass/_final.scss */
+.cloud-4 {
+  width: 159px;
+  height: 53px;
+  background: url("../images/cloud-4.png");
+  margin-top: 50px;
+  margin-left: -650px; }
+
+/* line 101, ../sass/_final.scss */
+.cloud-5 {
+  width: 196px;
+  height: 62px;
+  background: url("../images/cloud-5.png");
+  margin-top: 260px;
+  margin-left: 200px; }
+
+/* line 111, ../sass/_final.scss */
+.social-icon {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 44px;
+  height: 44px; }
+  /* line 117, ../sass/_final.scss */
+  .social-icon img {
+    width: 100%; }
+  /* line 120, ../sass/_final.scss */
+  .social-icon a {
+    display: block;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+    /* line 124, ../sass/_final.scss */
+    .social-icon a:hover {
+      -webkit-transform: rotate(15deg);
+      -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      -o-transform: rotate(15deg);
+      transform: rotate(15deg); }
+
+/* line 131, ../sass/_final.scss */
+.credit .logo-width {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 480px;
+  height: 178px;
+  background: url("../images/logo-width.png");
+  margin-top: -170px; }
+/* line 141, ../sass/_final.scss */
+.credit .logo-bigcat {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 90px;
+  height: 64px;
+  background: url("../images/logo-bigcat.png");
+  margin-top: 80px;
+  opacity: 0.5; }
+  /* line 153, ../sass/_final.scss */
+  .credit .logo-bigcat:hover {
+    opacity: 1; }
+/* line 158, ../sass/_final.scss */
+.credit .logo-fourdesire {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 90px;
+  height: 60px;
+  background: url("../images/logo-fourdesire.png");
+  margin-top: 82px;
+  margin-left: 230px;
+  opacity: 0.5; }
+  /* line 170, ../sass/_final.scss */
+  .credit .logo-fourdesire:hover {
+    opacity: 1; }
+/* line 175, ../sass/_final.scss */
+.credit .copyright {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 480px;
+  margin-top: 160px;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.5; }
