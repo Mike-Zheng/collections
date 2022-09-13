@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SVG /review_RunModes</title>
+    <g id="review_RunModes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sidebar-Icons/grid" transform="translate(10.000000, 5.000000)" fill="#4B39EF">
+            <path d="M37.6956142,27.9713644 L5.55345149,49.3994728 C4.45755139,50.1306435 3.04811799,50.1991052 1.8865127,49.5775903 C0.724907409,48.9560755 0,47.7455331 0,46.4281085 L0,3.57189153 C0,2.25446695 0.724907409,1.04392454 1.8865127,0.422409688 C3.04811799,-0.199105169 4.45755139,-0.130643512 5.55345149,0.600527155 L37.6956142,22.0286356 C38.6890039,22.6910255 39.2856669,23.806022 39.2856669,25 C39.2856669,26.193978 38.6890039,27.3089745 37.6956142,27.9713644 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
