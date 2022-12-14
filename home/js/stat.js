@@ -1,0 +1,1 @@
+define("stat",function(require,exports,module){exports.googleClickStat=function(t){try{var a=t.split("_"),i=a[3]?a[3]:1;ga("send","event",a[0],a[1],a[2],i)}catch(t){}},exports.init=function(){$(document).delegate("[google-data-stat]","click",function(){exports.googleClickStat($(this).attr("google-data-stat"))})},exports.init()});
