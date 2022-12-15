@@ -1,598 +1,1801 @@
-<!DOCTYPE html><!--  Last Published: Wed Sep 07 2022 23:55:07 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="62eac2e023652def5a13adfb" data-wf-site="608d9c1a6cbcc01b80952190">
-<head>
-  <meta charset="utf-8">
-  <title>FlutterFlow - Build beautiful, modern apps incredibly fast!</title>
-  <meta content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!" name="description">
-  <meta content="FlutterFlow - Build beautiful, modern apps incredibly fast!" property="og:title">
-  <meta content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!" property="og:description">
-  <meta content="https://uploads-ssl.webflow.com/608d9c1a6cbcc01b80952190/62f1a2ee0897775f2b7f4422_shareLink_1.jpg" property="og:image">
-  <meta content="FlutterFlow - Build beautiful, modern apps incredibly fast!" property="twitter:title">
-  <meta content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!" property="twitter:description">
-  <meta content="https://uploads-ssl.webflow.com/608d9c1a6cbcc01b80952190/62f1a2ee0897775f2b7f4422_shareLink_1.jpg" property="twitter:image">
-  <meta property="og:type" content="website">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/components.css" rel="stylesheet" type="text/css">
-  <link href="css/flutterflow-updated-home.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700"]  }});</script>
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-  <script type="text/javascript" charset="UTF-8" src="https://ca-eu.cookie-script.com/s/3423b15a1eef66feff758383200b359d.js"></script>
-  <!--  Google Tag Manager  -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KVBSFM5');</script>
-  <!--  End Google Tag Manager  -->
-  <link href="https://unpkg.com/beerslider/dist/BeerSlider.css" rel="stylesheet" type="text/css">
-  <style>div.w-slider-dot {
-  height: 6px;
-  background: #424E5A;
-  top: 3px;
-  -webkit-transition: all 0.2s ease;
--moz-transition: all 0.2s ease;
--o-transition: all 0.2s ease;
-transition: all 0.2s ease;
-}
-.w-slider-nav.w-round > div {
-  width: 44px !important;
-  border-radius: 8px;
-}
-div.w-slider-dot.w-active {
-  height: 6px;
-  width: 60px !important;
-  background: white;
-  top: 3px;
-}
-</style>
-</head>
-<body class="bgdark">
-  <div class="w-embed w-iframe">
-    <!--  Google Tag Manager (noscript)  -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVBSFM5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!--  End Google Tag Manager (noscript)  -->
-  </div>
-  <div style="background-color:rgba(0,0,0,0)" class="navwrapper wf-section">
-    <div data-collapse="medium" data-animation="default" data-duration="300" data-doc-height="1" data-easing2="ease-out" data-easing="ease" role="banner" class="navbar home fixed w-nav">
-      <div class="container-fluid nav w-container">
-        <a href="index.html" class="w-nav-brand"><img src="images/3xlogo_primary_color.png" loading="lazy" alt="FlutterFlow Logo Vector (on dark)" sizes="(max-width: 479px) 76vw, (max-width: 1919px) 160px, 200px" srcset="images/3xlogo_primary_color-p-500.png 500w, images/3xlogo_primary_color-p-800.png 800w, images/3xlogo_primary_color-p-1080.png 1080w, images/3xlogo_primary_color.png 1155w" class="image-3"></a>
-        <nav role="navigation" class="nav-menu w-clearfix w-nav-menu">
-          <div class="navfloatright">
-            <a href="features.html" class="nav_link white w-nav-link">Features</a>
-            <a href="pricing.html" class="nav_link white w-nav-link">Pricing</a>
-            <a href="https://docs.flutterflow.io" target="_blank" class="nav_link white w-nav-link">Docs</a>
-            <a href="http://blog.flutterflow.io" class="nav_link white w-nav-link">Blog</a>
-            <a href="hackathon-2022.html" class="nav_link white w-nav-link">🎮 Hackathon</a>
-            <a href="https://experts.flutterflow.io" target="_blank" class="nav_link white w-nav-link">Experts</a>
-            <a href="ffconf-2022.html" class="nav_link white w-nav-link">Conference</a>
-          </div>
-          <div class="navfloatleft ph_3">
-            <a href="https://app.flutterflow.io" target="_blank" class="nav_link white outline w-nav-link">Sign In</a>
-            <a href="https://flutterflow.io/create-account" target="_blank" class="btn btnprimary ph_3 w-nav-link">Start for free</a>
-          </div>
-        </nav>
-        <div class="menu-button w-nav-button">
-          <div class="w-icon-nav-menu"></div>
-        </div>
-      </div>
+<!DOCTYPE html>
+<!--  Last Published: Wed Sep 07 2022 23:55:07 GMT+0000 (Coordinated Universal Time)  -->
+<html
+  data-wf-page="62eac2e023652def5a13adfb"
+  data-wf-site="608d9c1a6cbcc01b80952190"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>FlutterFlow - Build beautiful, modern apps incredibly fast!</title>
+    <meta
+      content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!"
+      name="description"
+    />
+    <meta
+      content="FlutterFlow - Build beautiful, modern apps incredibly fast!"
+      property="og:title"
+    />
+    <meta
+      content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!"
+      property="og:description"
+    />
+    <meta
+      content="https://uploads-ssl.webflow.com/608d9c1a6cbcc01b80952190/62f1a2ee0897775f2b7f4422_shareLink_1.jpg"
+      property="og:image"
+    />
+    <meta
+      content="FlutterFlow - Build beautiful, modern apps incredibly fast!"
+      property="twitter:title"
+    />
+    <meta
+      content="FlutterFlow lets you build apps incredibly fast in your browser. Build fully functional apps with Firebase integration, API support, animations, and more. Export your code or even easier deploy directly to the app stores!"
+      property="twitter:description"
+    />
+    <meta
+      content="https://uploads-ssl.webflow.com/608d9c1a6cbcc01b80952190/62f1a2ee0897775f2b7f4422_shareLink_1.jpg"
+      property="twitter:image"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/flutterflow-updated-home.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: { families: ["Oswald:200,300,400,500,600,700"] },
+      });
+    </script>
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+    <!-- <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://ca-eu.cookie-script.com/s/3423b15a1eef66feff758383200b359d.js"
+    ></script> -->
+    <!--  Google Tag Manager  -->
+    <!-- <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KVBSFM5");
+    </script> -->
+    <!--  End Google Tag Manager  -->
+    <link
+      href="https://unpkg.com/beerslider/dist/BeerSlider.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      div.w-slider-dot {
+        height: 6px;
+        background: #424e5a;
+        top: 3px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+      .w-slider-nav.w-round > div {
+        width: 44px !important;
+        border-radius: 8px;
+      }
+      div.w-slider-dot.w-active {
+        height: 6px;
+        width: 60px !important;
+        background: white;
+        top: 3px;
+      }
+    </style>
+  </head>
+  <body class="bgdark">
+    <div class="w-embed w-iframe">
+      <!--  Google Tag Manager (noscript)  -->
+      <!-- <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-KVBSFM5"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript> -->
+      <!--  End Google Tag Manager (noscript)  -->
     </div>
-  </div>
-  <div data-w-id="3f87cda1-3d90-5bbf-9440-7c8e4f730c32" class="onscrolltrigger"></div>
-  <div class="herogradient hero900 ph_3 wf-section">
-    <div class="heroheader ph_3 w-container">
-      <h1 data-w-id="2a13df68-71f7-e42a-3230-5a136d9890f9" style="-webkit-transform:translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading heading-large-78px"><span class="tertiaryheadertext">Build applications</span> faster than ever</h1>
-      <p data-w-id="f6661b4f-2c20-2fd3-f798-8dc3c492e1ef" style="opacity:0;-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="paragraph_largehome paragraph-center">Create beautiful UI, generate clean code, and deploy to the app stores or web in one click. Fully extensible with custom code.</p>
-      <div data-w-id="abbca123-5a87-253e-c0bf-461f935bdf01" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="buttonarea_flex">
-        <a href="https://www.producthunt.com/posts/flutterflow-3-0" target="_blank" class="w-inline-block">
-          <div data-w-id="5ff0b00d-1056-2796-bc54-482e4f2cc73f" style="opacity:0;-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="alert_primary">
-            <div class="tag">
-              <p class="text_white_16px">New</p>
+    <div
+      style="background-color: rgba(0, 0, 0, 0)"
+      class="navwrapper wf-section"
+    >
+      <div
+        data-collapse="medium"
+        data-animation="default"
+        data-duration="300"
+        data-doc-height="1"
+        data-easing2="ease-out"
+        data-easing="ease"
+        role="banner"
+        class="navbar home fixed w-nav"
+      >
+        <div class="container-fluid nav w-container">
+          <a href="index.html" class="w-nav-brand"
+            ><img
+              src="images/3xlogo_primary_color.png"
+              loading="lazy"
+              alt="FlutterFlow Logo Vector (on dark)"
+              sizes="(max-width: 479px) 76vw, (max-width: 1919px) 160px, 200px"
+              srcset="
+                images/3xlogo_primary_color-p-500.png   500w,
+                images/3xlogo_primary_color-p-800.png   800w,
+                images/3xlogo_primary_color-p-1080.png 1080w,
+                images/3xlogo_primary_color.png        1155w
+              "
+              class="image-3"
+          /></a>
+          <nav role="navigation" class="nav-menu w-clearfix w-nav-menu">
+            <div class="navfloatright">
+              <a href="features.html" class="nav_link white w-nav-link"
+                >Features</a
+              >
+              <a href="pricing.html" class="nav_link white w-nav-link"
+                >Pricing</a
+              >
+              <a
+                href="https://docs.flutterflow.io"
+                target="_blank"
+                class="nav_link white w-nav-link"
+                >Docs</a
+              >
+              <a
+                href="http://blog.flutterflow.io"
+                class="nav_link white w-nav-link"
+                >Blog</a
+              >
+              <a href="hackathon-2022.html" class="nav_link white w-nav-link"
+                >🎮 Hackathon</a
+              >
+              <a
+                href="https://experts.flutterflow.io"
+                target="_blank"
+                class="nav_link white w-nav-link"
+                >Experts</a
+              >
+              <a href="ffconf-2022.html" class="nav_link white w-nav-link"
+                >Conference</a
+              >
             </div>
-            <p class="text_white_16px">Flutterflow 3.0 is here, view us on Product Hunt ⇾</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div data-w-id="05c9b0df-5d18-2727-507d-368788e8c6fa" class="hero_imagewrapper ph_container w-container">
-      <div data-w-id="4ddd0fd8-ffcf-fa11-3bd2-e0b3484b744a" style="opacity:0" class="featurecentered ph_3"><img src="images/home_PH_canvasView.svg" loading="lazy" alt="A beautiful example of building in Flutterflow in 2022. Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder." width="840.5" class="hero2022"><img src="images/animate_TopLayer.svg" loading="lazy" alt="A beautiful example of building in Flutterflow in 2022. Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder." width="840.5" class="overlay_1"><img src="images/4_animation_sideNav_Shadow.png" loading="lazy" srcset="images/4_animation_sideNav_Shadow-p-500.png 500w, images/4_animation_sideNav_Shadow-p-800.png 800w, images/4_animation_sideNav_Shadow-p-1080.png 1080w, images/4_animation_sideNav_Shadow-p-1600.png 1600w, images/4_animation_sideNav_Shadow.png 1680w" sizes="(max-width: 1439px) 80vw, (max-width: 1919px) 81vw, 1400px" alt="" class="overlay_2"></div>
-    </div>
-  </div>
-  <div class="body_2022 ph_3 wf-section">
-    <h1 data-w-id="c1509be9-e029-de58-e444-b8cd043be789" style="opacity:0" class="massiveheader">Build Different</h1>
-    <div class="container-fluid paddingsides w-container">
-      <h4 class="paddingbottom heading-4">Trusted by users at leading companies around the world</h4>
-      <div class="w-layout-grid logogrid"><img src="images/rakuten.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d63f-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d63f" alt="" class="logobrand"><img src="images/wex.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d640-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d640" alt="" class="logobrand"><img src="images/yokogawa.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d641-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d641" alt="" class="logobrand"><img src="images/reckitt.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d642-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d642" alt="" class="logobrand"><img src="images/schlumberger.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d643-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d643" alt="" class="logobrand"><img src="images/deloitte.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d644-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d644" alt="" class="logobrand"><img src="images/NOV.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d645-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d645" alt="" class="logobrand"><img src="images/toshiba.svg" loading="lazy" id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d646-30a3d63b" data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d646" alt="" class="logobrand">
-        <div id="w-node-_03091c45-6c21-8a90-5486-54e36b3b4c02-30a3d63b" class="blankdiv hidemobile">
-          <p id="w-node-_54519c80-e716-b8c3-840a-3e9bc14f0e20-30a3d63b"> </p>
-        </div><img src="images/lumen.svg" loading="lazy" id="w-node-_8877b5c6-a033-8318-0c35-54d3b63229e4-30a3d63b" data-w-id="8877b5c6-a033-8318-0c35-54d3b63229e4" alt="" class="logobrand"><img src="images/sparkCharge.svg" loading="lazy" id="w-node-_4435d9f6-ea83-9c24-ac0d-a74d8f9bfac6-30a3d63b" data-w-id="4435d9f6-ea83-9c24-ac0d-a74d8f9bfac6" alt="" class="logobrand">
-      </div>
-    </div>
-  </div>
-  <div class="wf-section">
-    <div class="container-fluid paddingtop centertext paddingbottom w-container">
-      <h1 class="heading_50px_center">Try a demo of FlutterFlow</h1>
-      <h3 class="headergray-20px centertext">See what it&#x27;s like to build in FlutterFlow, no login required!</h3>
-    </div>
-    <div class="w-layout-grid grid-4x1">
-      <div id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4" data-w-id="ee911765-6488-4663-ef31-783dd153c4d4" class="featurecard black-400">
-        <a href="https://app.flutterflow.io/project/financial-dashboard-t2ollo" target="_blank" class="link-block-2 w-inline-block">
-          <div class="clonetopcard"><img src="images/clonable_12x.png" loading="lazy" alt="" class="clonable_img"></div>
-          <h3 class="paddingsmall h3_bold">Responsive Fintech App</h3>
-          <p class="paddingsmall">A nice responsive fintech template for you to start building in Flutterflow.</p>
-          <div class="clonehover"><img src="images/flutterRun.svg" loading="lazy" alt="" class="button clonebtn"></div>
-        </a>
-      </div>
-      <div id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4" data-w-id="ee911765-6488-4663-ef31-783dd153c4d4" class="featurecard black-400">
-        <a href="https://app.flutterflow.io/project/c-r-m-responsive-app-9skfhr" target="_blank" class="link-block-2 w-inline-block">
-          <div class="clonetopcard"><img src="images/clonable_42x.png" loading="lazy" alt="" class="clonable_img"></div>
-          <h3 class="paddingsmall h3_bold">CRM Application</h3>
-          <p class="paddingsmall">A responsive application for business use cases, the ability to manage leads.</p>
-          <div class="clonehover"><img src="images/flutterRun.svg" loading="lazy" alt="" class="button clonebtn"></div>
-        </a>
-      </div>
-      <div id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4" data-w-id="ee911765-6488-4663-ef31-783dd153c4d4" class="featurecard black-400">
-        <a href="https://app.flutterflow.io/project/e-comm-clone-dofk2a" target="_blank" class="link-block-2 w-inline-block">
-          <div class="clonetopcard"><img src="images/clonable_32x.png" loading="lazy" alt="" class="clonable_img"></div>
-          <h3 class="paddingsmall h3_bold">E-Commerce App</h3>
-          <p class="paddingsmall">Need a ticketing or review system? Checkout this faclities inspection app.</p>
-          <div class="clonehover"><img src="images/flutterRun.svg" loading="lazy" alt="" class="button clonebtn"></div>
-        </a>
-      </div>
-      <div id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4" data-w-id="ee911765-6488-4663-ef31-783dd153c4d4" class="featurecard black-400">
-        <a href="https://app.flutterflow.io/project/clone-project-management-app-r9mgyz" target="_blank" class="link-block-2 w-inline-block">
-          <div class="clonetopcard"><img src="images/clonable_22x.png" loading="lazy" alt="" class="clonable_img"></div>
-          <h3 class="paddingsmall h3_bold">Task Management App</h3>
-          <p class="paddingsmall">A responsive application that allows you to manage your team easily.</p>
-          <div class="clonehover"><img src="images/flutterRun.svg" loading="lazy" alt="" class="button clonebtn"></div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="sectionpaddingtb wf-section">
-    <div class="tabs-section">
-      <div class="tabs-container w-clearfix">
-        <div data-w-id="e138c524-df81-0170-e70f-70b75ff418ad" style="opacity:0" class="tabs-heading-wrap">
-          <p class="tertiarytext">Develop Visually</p>
-          <h1 class="tabs-heading">Build Different</h1>
-          <p>Easily build beautiful apps, connect data, and implement advanced functionality.</p>
-        </div>
-        <div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="tabs w-tabs">
-          <div class="tabs-menu w-tab-menu">
-            <a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
-              <div>
-                <h2 class="home-ca">Visual builder</h2>
-                <div class="paragraph-14-gray-left">Easy drag-and-drop builder lets you build 10x faster.</div>
-              </div>
-            </a>
-            <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
-              <div class="div-block-15">
-                <h2 class="home-ca">Easy data &amp; API integration</h2>
-                <div class="paragraph-14-gray-left">Firebase support makes it easy to connect your app to live data. You can also use our API support to connect with any 3rd party API or your own RESTful backend.</div>
-              </div>
-            </a>
-            <a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
-              <div>
-                <h2 class="home-ca">Multi-language apps</h2>
-                <div class="paragraph-14-gray-left">Translate your entire app in seconds with the click of a button using Google Translate. Localization has never been easier.</div>
-              </div>
-            </a>
-          </div>
-          <div data-w-id="e138c524-df81-0170-e70f-70b75ff418c3" style="opacity:0" class="tabs-content w-tab-content">
-            <div data-w-tab="Tab 1" class="tab-pane w-tab-pane w--tab-active"><img loading="lazy" src="images/animate_BuildVisually.svg" alt="Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder." class="tabs-img"></div>
-            <div data-w-tab="Tab 2" class="tab-pane w-tab-pane"><img loading="lazy" src="images/Animation_Backend.svg" alt="Create dynamic apps within minutes using Flutterflow!" class="tabs-img"></div>
-            <div data-w-tab="Tab 3" class="tab-pane w-tab-pane"><img loading="lazy" src="images/animate_Languages.svg" alt="Easily create a multi-lingual app in Flutterflow." class="tabs-img"></div>
+            <div class="navfloatleft ph_3">
+              <a
+                href="https://app.flutterflow.io"
+                target="_blank"
+                class="nav_link white outline w-nav-link"
+                >Sign In</a
+              >
+              <a
+                href="https://flutterflow.io/create-account"
+                target="_blank"
+                class="btn btnprimary ph_3 w-nav-link"
+                >Start for free</a
+              >
+            </div>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="sectionpaddingtb wf-section">
-    <div class="tabs-section">
-      <div class="tabs-container reverse w-clearfix">
-        <div class="tabs-heading-wrap reverse">
-          <p class="tertiarytext">Build production ready apps</p>
-          <h1 class="tabs-heading">Customize everything</h1>
-          <p>There is no limit to what you can build.</p>
+    <div
+      data-w-id="3f87cda1-3d90-5bbf-9440-7c8e4f730c32"
+      class="onscrolltrigger"
+    ></div>
+    <div class="herogradient hero900 ph_3 wf-section">
+      <div class="heroheader ph_3 w-container">
+        <h1
+          data-w-id="2a13df68-71f7-e42a-3230-5a136d9890f9"
+          style="
+            -webkit-transform: translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0, 40px, 0) scale3d(0.9, 0.9, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+          class="heading heading-large-78px"
+        >
+          <span class="tertiaryheadertext">Build applications</span> faster than
+          ever
+        </h1>
+        <p
+          data-w-id="f6661b4f-2c20-2fd3-f798-8dc3c492e1ef"
+          style="
+            opacity: 0;
+            -webkit-transform: translate3d(0, 70px, 0) scale3d(1, 1, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+          "
+          class="paragraph_largehome paragraph-center"
+        >
+          Create beautiful UI, generate clean code, and deploy to the app stores
+          or web in one click. Fully extensible with custom code.
+        </p>
+        <div
+          data-w-id="abbca123-5a87-253e-c0bf-461f935bdf01"
+          style="
+            -webkit-transform: translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -moz-transform: translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            -ms-transform: translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1)
+              rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+            transform: translate3d(0, 60px, 0) scale3d(0.8, 0.8, 1) rotateX(0)
+              rotateY(0) rotateZ(0) skew(0, 0);
+            opacity: 0;
+          "
+          class="buttonarea_flex"
+        >
+          <a
+            href="https://www.producthunt.com/posts/flutterflow-3-0"
+            target="_blank"
+            class="w-inline-block"
+          >
+            <div
+              data-w-id="5ff0b00d-1056-2796-bc54-482e4f2cc73f"
+              style="
+                opacity: 0;
+                -webkit-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -moz-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                -ms-transform: translate3d(0, 40px, 0) scale3d(1, 1, 1)
+                  rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                transform: translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0)
+                  rotateY(0) rotateZ(0) skew(0, 0);
+              "
+              class="alert_primary"
+            >
+              <div class="tag">
+                <p class="text_white_16px">New</p>
+              </div>
+              <p class="text_white_16px">
+                Flutterflow 3.0 is here, view us on Product Hunt ⇾
+              </p>
+            </div>
+          </a>
         </div>
-        <div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="tabs w-tabs">
-          <div data-w-id="56190ade-ec28-9028-50fc-479c477ba57a" style="opacity:0" class="tabs-menu reverse w-tab-menu">
-            <a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
-              <div>
-                <h2 class="home-ca">Visual Action Builder</h2>
-                <div class="paragraph-14-gray-left">Our visual action builder makes it easy to add complex action flows within your application.</div>
-              </div>
-            </a>
-            <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
-              <div class="div-block-15">
-                <h2 class="home-ca">Custom Widgets</h2>
-                <div class="paragraph-14-gray-left">Use our Custom Widget editor to create your own widgets. <br>You can then drag and drop your custom widgets directly in our UI builder. 👌</div>
-              </div>
-            </a>
-            <a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
-              <div>
-                <h2 class="home-ca">Custom Functions</h2>
-                <div class="paragraph-14-gray-left"> Write and test dart code in FlutterFlow, or use OpenAI&#x27;s Codex to generate the code for you!</div>
-              </div>
-            </a>
+      </div>
+      <div
+        data-w-id="05c9b0df-5d18-2727-507d-368788e8c6fa"
+        class="hero_imagewrapper ph_container w-container"
+      >
+        <div
+          data-w-id="4ddd0fd8-ffcf-fa11-3bd2-e0b3484b744a"
+          style="opacity: 0"
+          class="featurecentered ph_3"
+        >
+          <img
+            src="images/home_PH_canvasView.svg"
+            loading="lazy"
+            alt="A beautiful example of building in Flutterflow in 2022. Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder."
+            width="840.5"
+            class="hero2022"
+          /><img
+            src="images/animate_TopLayer.svg"
+            loading="lazy"
+            alt="A beautiful example of building in Flutterflow in 2022. Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder."
+            width="840.5"
+            class="overlay_1"
+          /><img
+            src="images/4_animation_sideNav_Shadow.png"
+            loading="lazy"
+            srcset="
+              images/4_animation_sideNav_Shadow-p-500.png   500w,
+              images/4_animation_sideNav_Shadow-p-800.png   800w,
+              images/4_animation_sideNav_Shadow-p-1080.png 1080w,
+              images/4_animation_sideNav_Shadow-p-1600.png 1600w,
+              images/4_animation_sideNav_Shadow.png        1680w
+            "
+            sizes="(max-width: 1439px) 80vw, (max-width: 1919px) 81vw, 1400px"
+            alt=""
+            class="overlay_2"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="body_2022 ph_3 wf-section">
+      <h1
+        data-w-id="c1509be9-e029-de58-e444-b8cd043be789"
+        style="opacity: 0"
+        class="massiveheader"
+      >
+        Build Different
+      </h1>
+      <div class="container-fluid paddingsides w-container">
+        <h4 class="paddingbottom heading-4">
+          Trusted by users at leading companies around the world
+        </h4>
+        <div class="w-layout-grid logogrid">
+          <img
+            src="images/rakuten.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d63f-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d63f"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/wex.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d640-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d640"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/yokogawa.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d641-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d641"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/reckitt.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d642-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d642"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/schlumberger.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d643-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d643"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/deloitte.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d644-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d644"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/NOV.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d645-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d645"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/toshiba.svg"
+            loading="lazy"
+            id="w-node-_4bdf33e5-dfa4-3bfa-f03d-3d7130a3d646-30a3d63b"
+            data-w-id="4bdf33e5-dfa4-3bfa-f03d-3d7130a3d646"
+            alt=""
+            class="logobrand"
+          />
+          <div
+            id="w-node-_03091c45-6c21-8a90-5486-54e36b3b4c02-30a3d63b"
+            class="blankdiv hidemobile"
+          >
+            <p id="w-node-_54519c80-e716-b8c3-840a-3e9bc14f0e20-30a3d63b"></p>
           </div>
-          <div class="tabs-content reverse w-tab-content">
-            <div data-w-tab="Tab 1" class="tab-pane w-tab-pane w--tab-active"><img width="770" srcset="images/animation_VisualBuilder2x-p-500.png 500w, images/animation_VisualBuilder2x-p-800.png 800w, images/animation_VisualBuilder2x.png 1660w" alt="Build highly complex action flows all within Flutterflow visual action builder." src="images/animation_VisualBuilder2x.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px" class="tabs-img"></div>
-            <div data-w-tab="Tab 2" class="tab-pane w-tab-pane"><img width="830" srcset="images/animation_customWidget2x-p-500.png 500w, images/animation_customWidget2x-p-800.png 800w, images/animation_customWidget2x-p-1080.png 1080w, images/animation_customWidget2x.png 1660w" alt="Need a flutter widget that FF doesn&#x27;t support natively? Go ahead and build onto your apps easily using custom widgets." src="images/animation_customWidget2x.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px" class="tabs-img"></div>
-            <div data-w-tab="Tab 3" class="tab-pane w-tab-pane"><img srcset="images/animation_customFunctions2x-p-500.png 500w, images/animation_customFunctions2x.png 1660w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px" alt="Custom Functions allows you to build onto your Flutterflow application with code." src="images/animation_customFunctions2x.png" loading="lazy" class="tabs-img"></div>
+          <img
+            src="images/lumen.svg"
+            loading="lazy"
+            id="w-node-_8877b5c6-a033-8318-0c35-54d3b63229e4-30a3d63b"
+            data-w-id="8877b5c6-a033-8318-0c35-54d3b63229e4"
+            alt=""
+            class="logobrand"
+          /><img
+            src="images/sparkCharge.svg"
+            loading="lazy"
+            id="w-node-_4435d9f6-ea83-9c24-ac0d-a74d8f9bfac6-30a3d63b"
+            data-w-id="4435d9f6-ea83-9c24-ac0d-a74d8f9bfac6"
+            alt=""
+            class="logobrand"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="wf-section">
+      <div
+        class="container-fluid paddingtop centertext paddingbottom w-container"
+      >
+        <h1 class="heading_50px_center">Try a demo of FlutterFlow</h1>
+        <h3 class="headergray-20px centertext">
+          See what it&#x27;s like to build in FlutterFlow, no login required!
+        </h3>
+      </div>
+      <div class="w-layout-grid grid-4x1">
+        <div
+          id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4"
+          data-w-id="ee911765-6488-4663-ef31-783dd153c4d4"
+          class="featurecard black-400"
+        >
+          <a
+            href="https://app.flutterflow.io/project/financial-dashboard-t2ollo"
+            target="_blank"
+            class="link-block-2 w-inline-block"
+          >
+            <div class="clonetopcard">
+              <img
+                src="images/clonable_12x.png"
+                loading="lazy"
+                alt=""
+                class="clonable_img"
+              />
+            </div>
+            <h3 class="paddingsmall h3_bold">Responsive Fintech App</h3>
+            <p class="paddingsmall">
+              A nice responsive fintech template for you to start building in
+              Flutterflow.
+            </p>
+            <div class="clonehover">
+              <img
+                src="images/flutterRun.svg"
+                loading="lazy"
+                alt=""
+                class="button clonebtn"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4"
+          data-w-id="ee911765-6488-4663-ef31-783dd153c4d4"
+          class="featurecard black-400"
+        >
+          <a
+            href="https://app.flutterflow.io/project/c-r-m-responsive-app-9skfhr"
+            target="_blank"
+            class="link-block-2 w-inline-block"
+          >
+            <div class="clonetopcard">
+              <img
+                src="images/clonable_42x.png"
+                loading="lazy"
+                alt=""
+                class="clonable_img"
+              />
+            </div>
+            <h3 class="paddingsmall h3_bold">CRM Application</h3>
+            <p class="paddingsmall">
+              A responsive application for business use cases, the ability to
+              manage leads.
+            </p>
+            <div class="clonehover">
+              <img
+                src="images/flutterRun.svg"
+                loading="lazy"
+                alt=""
+                class="button clonebtn"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4"
+          data-w-id="ee911765-6488-4663-ef31-783dd153c4d4"
+          class="featurecard black-400"
+        >
+          <a
+            href="https://app.flutterflow.io/project/e-comm-clone-dofk2a"
+            target="_blank"
+            class="link-block-2 w-inline-block"
+          >
+            <div class="clonetopcard">
+              <img
+                src="images/clonable_32x.png"
+                loading="lazy"
+                alt=""
+                class="clonable_img"
+              />
+            </div>
+            <h3 class="paddingsmall h3_bold">E-Commerce App</h3>
+            <p class="paddingsmall">
+              Need a ticketing or review system? Checkout this faclities
+              inspection app.
+            </p>
+            <div class="clonehover">
+              <img
+                src="images/flutterRun.svg"
+                loading="lazy"
+                alt=""
+                class="button clonebtn"
+              />
+            </div>
+          </a>
+        </div>
+        <div
+          id="w-node-ee911765-6488-4663-ef31-783dd153c4d4-d153c4d4"
+          data-w-id="ee911765-6488-4663-ef31-783dd153c4d4"
+          class="featurecard black-400"
+        >
+          <a
+            href="https://app.flutterflow.io/project/clone-project-management-app-r9mgyz"
+            target="_blank"
+            class="link-block-2 w-inline-block"
+          >
+            <div class="clonetopcard">
+              <img
+                src="images/clonable_22x.png"
+                loading="lazy"
+                alt=""
+                class="clonable_img"
+              />
+            </div>
+            <h3 class="paddingsmall h3_bold">Task Management App</h3>
+            <p class="paddingsmall">
+              A responsive application that allows you to manage your team
+              easily.
+            </p>
+            <div class="clonehover">
+              <img
+                src="images/flutterRun.svg"
+                loading="lazy"
+                alt=""
+                class="button clonebtn"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sectionpaddingtb wf-section">
+      <div class="tabs-section">
+        <div class="tabs-container w-clearfix">
+          <div
+            data-w-id="e138c524-df81-0170-e70f-70b75ff418ad"
+            style="opacity: 0"
+            class="tabs-heading-wrap"
+          >
+            <p class="tertiarytext">Develop Visually</p>
+            <h1 class="tabs-heading">Build Different</h1>
+            <p>
+              Easily build beautiful apps, connect data, and implement advanced
+              functionality.
+            </p>
+          </div>
+          <div
+            data-duration-in="300"
+            data-duration-out="100"
+            data-current="Tab 1"
+            data-easing="ease"
+            class="tabs w-tabs"
+          >
+            <div class="tabs-menu w-tab-menu">
+              <a
+                data-w-tab="Tab 1"
+                class="tab-link w-inline-block w-tab-link w--current"
+              >
+                <div>
+                  <h2 class="home-ca">Visual builder</h2>
+                  <div class="paragraph-14-gray-left">
+                    Easy drag-and-drop builder lets you build 10x faster.
+                  </div>
+                </div>
+              </a>
+              <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+                <div class="div-block-15">
+                  <h2 class="home-ca">Easy data &amp; API integration</h2>
+                  <div class="paragraph-14-gray-left">
+                    Firebase support makes it easy to connect your app to live
+                    data. You can also use our API support to connect with any
+                    3rd party API or your own RESTful backend.
+                  </div>
+                </div>
+              </a>
+              <a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
+                <div>
+                  <h2 class="home-ca">Multi-language apps</h2>
+                  <div class="paragraph-14-gray-left">
+                    Translate your entire app in seconds with the click of a
+                    button using Google Translate. Localization has never been
+                    easier.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              data-w-id="e138c524-df81-0170-e70f-70b75ff418c3"
+              style="opacity: 0"
+              class="tabs-content w-tab-content"
+            >
+              <div data-w-tab="Tab 1" class="tab-pane w-tab-pane w--tab-active">
+                <img
+                  loading="lazy"
+                  src="images/animate_BuildVisually.svg"
+                  alt="Build visually in Flutterflow, create beautiful flutter apps all within Flutterflow visual builder."
+                  class="tabs-img"
+                />
+              </div>
+              <div data-w-tab="Tab 2" class="tab-pane w-tab-pane">
+                <img
+                  loading="lazy"
+                  src="images/Animation_Backend.svg"
+                  alt="Create dynamic apps within minutes using Flutterflow!"
+                  class="tabs-img"
+                />
+              </div>
+              <div data-w-tab="Tab 3" class="tab-pane w-tab-pane">
+                <img
+                  loading="lazy"
+                  src="images/animate_Languages.svg"
+                  alt="Easily create a multi-lingual app in Flutterflow."
+                  class="tabs-img"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="section paddinglarge paddingbottom wf-section">
-    <div class="container-8 paddingtop centertext">
-      <div class="title-wrapper">
-        <h3 class="h3-heading">What our customers say</h3>
-        <div class="headergray-20px centertext">Testimonials from users</div>
-      </div>
-      <div data-delay="4000" data-animation="cross" class="slider-testimonial w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="600" data-infinite="true" id="flowbaseSlider">
-        <div class="mask-testimonial w-slider-mask">
-          <div class="slide-testimonial w-slide">
-            <div class="w-layout-grid grid-team-slider">
-              <div class="image-block"><img src="images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg.webp" loading="lazy" srcset="images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg-p-500.webp 500w, images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg.webp 800w" sizes="100vw" alt="Nick Karwoski -- a Flutterflow user, founder of TAGALONG PRO." class="content-image-cover">
-                <div class="content-background"></div>
+    <div class="sectionpaddingtb wf-section">
+      <div class="tabs-section">
+        <div class="tabs-container reverse w-clearfix">
+          <div class="tabs-heading-wrap reverse">
+            <p class="tertiarytext">Build production ready apps</p>
+            <h1 class="tabs-heading">Customize everything</h1>
+            <p>There is no limit to what you can build.</p>
+          </div>
+          <div
+            data-duration-in="300"
+            data-duration-out="100"
+            data-current="Tab 1"
+            data-easing="ease"
+            class="tabs w-tabs"
+          >
+            <div
+              data-w-id="56190ade-ec28-9028-50fc-479c477ba57a"
+              style="opacity: 0"
+              class="tabs-menu reverse w-tab-menu"
+            >
+              <a
+                data-w-tab="Tab 1"
+                class="tab-link w-inline-block w-tab-link w--current"
+              >
+                <div>
+                  <h2 class="home-ca">Visual Action Builder</h2>
+                  <div class="paragraph-14-gray-left">
+                    Our visual action builder makes it easy to add complex
+                    action flows within your application.
+                  </div>
+                </div>
+              </a>
+              <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+                <div class="div-block-15">
+                  <h2 class="home-ca">Custom Widgets</h2>
+                  <div class="paragraph-14-gray-left">
+                    Use our Custom Widget editor to create your own widgets.
+                    <br />You can then drag and drop your custom widgets
+                    directly in our UI builder. 👌
+                  </div>
+                </div>
+              </a>
+              <a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
+                <div>
+                  <h2 class="home-ca">Custom Functions</h2>
+                  <div class="paragraph-14-gray-left">
+                    Write and test dart code in FlutterFlow, or use
+                    OpenAI&#x27;s Codex to generate the code for you!
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tabs-content reverse w-tab-content">
+              <div data-w-tab="Tab 1" class="tab-pane w-tab-pane w--tab-active">
+                <img
+                  width="770"
+                  srcset="
+                    images/animation_VisualBuilder2x-p-500.png  500w,
+                    images/animation_VisualBuilder2x-p-800.png  800w,
+                    images/animation_VisualBuilder2x.png       1660w
+                  "
+                  alt="Build highly complex action flows all within Flutterflow visual action builder."
+                  src="images/animation_VisualBuilder2x.png"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px"
+                  class="tabs-img"
+                />
               </div>
-              <div>
-                <p class="team-details-large"><em class="italic-text-7">Thanks to FlutterFlow, we have gone from feeling helpless about our platform to feeling hopeful about our future in a manner of weeks. It&#x27;s a little premature to say, but it might have saved our business.</em></p>
-                <div class="name-wrapper">
-                  <div class="testimonial-name">Nick Karwoski</div>
-                  <div class="line-break-detail">/</div>
-                  <div class="testimonial-role">Founder - TAGALONG PRO</div>
+              <div data-w-tab="Tab 2" class="tab-pane w-tab-pane">
+                <img
+                  width="830"
+                  srcset="
+                    images/animation_customWidget2x-p-500.png   500w,
+                    images/animation_customWidget2x-p-800.png   800w,
+                    images/animation_customWidget2x-p-1080.png 1080w,
+                    images/animation_customWidget2x.png        1660w
+                  "
+                  alt="Need a flutter widget that FF doesn&#x27;t support natively? Go ahead and build onto your apps easily using custom widgets."
+                  src="images/animation_customWidget2x.png"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px"
+                  class="tabs-img"
+                />
+              </div>
+              <div data-w-tab="Tab 3" class="tab-pane w-tab-pane">
+                <img
+                  srcset="
+                    images/animation_customFunctions2x-p-500.png  500w,
+                    images/animation_customFunctions2x.png       1660w
+                  "
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 85vw, (max-width: 1919px) 47vw, 700px"
+                  alt="Custom Functions allows you to build onto your Flutterflow application with code."
+                  src="images/animation_customFunctions2x.png"
+                  loading="lazy"
+                  class="tabs-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section paddinglarge paddingbottom wf-section">
+      <div class="container-8 paddingtop centertext">
+        <div class="title-wrapper">
+          <h3 class="h3-heading">What our customers say</h3>
+          <div class="headergray-20px centertext">Testimonials from users</div>
+        </div>
+        <div
+          data-delay="4000"
+          data-animation="cross"
+          class="slider-testimonial w-slider"
+          data-autoplay="true"
+          data-easing="ease"
+          data-hide-arrows="true"
+          data-disable-swipe="false"
+          data-autoplay-limit="0"
+          data-nav-spacing="3"
+          data-duration="600"
+          data-infinite="true"
+          id="flowbaseSlider"
+        >
+          <div class="mask-testimonial w-slider-mask">
+            <div class="slide-testimonial w-slide">
+              <div class="w-layout-grid grid-team-slider">
+                <div class="image-block">
+                  <img
+                    src="images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg.webp"
+                    loading="lazy"
+                    srcset="
+                      images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg-p-500.webp 500w,
+                      images/4fdcc9_ad182115c02d48a286a3e57dd55c8f81~mv2.jpeg.webp       800w
+                    "
+                    sizes="100vw"
+                    alt="Nick Karwoski -- a Flutterflow user, founder of TAGALONG PRO."
+                    class="content-image-cover"
+                  />
+                  <div class="content-background"></div>
+                </div>
+                <div>
+                  <p class="team-details-large">
+                    <em class="italic-text-7"
+                      >Thanks to FlutterFlow, we have gone from feeling helpless
+                      about our platform to feeling hopeful about our future in
+                      a manner of weeks. It&#x27;s a little premature to say,
+                      but it might have saved our business.</em
+                    >
+                  </p>
+                  <div class="name-wrapper">
+                    <div class="testimonial-name">Nick Karwoski</div>
+                    <div class="line-break-detail">/</div>
+                    <div class="testimonial-role">Founder - TAGALONG PRO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-testimonial w-slide">
+              <div class="w-layout-grid grid-team-slider">
+                <div class="image-block">
+                  <img
+                    src="images/tarlan_photo.png"
+                    loading="lazy"
+                    width="105"
+                    alt="A Flutterflow user. Tarlan Isaev"
+                    class="content-image-cover"
+                  />
+                  <div class="content-background"></div>
+                </div>
+                <div>
+                  <p class="team-details-large">
+                    <em
+                      >I have very little expertise in cross-platform mobile
+                      development, but FlutterFlow made it absolutely easy. A
+                      few months ago I couldn’t even imagine that there is a
+                      tool which makes mobile development available to anyone
+                      with little or no expertise.
+                    </em>
+                  </p>
+                  <div class="name-wrapper">
+                    <div class="testimonial-name">Tarlan Isaev</div>
+                    <div class="line-break-detail">/</div>
+                    <div class="testimonial-role">Founder - Foodshare</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-testimonial w-slide">
-            <div class="w-layout-grid grid-team-slider">
-              <div class="image-block"><img src="images/tarlan_photo.png" loading="lazy" width="105" alt="A Flutterflow user. Tarlan Isaev" class="content-image-cover">
-                <div class="content-background"></div>
-              </div>
-              <div>
-                <p class="team-details-large"><em>I have very little expertise in cross-platform mobile development, but FlutterFlow made it absolutely easy. A few months ago I couldn’t even imagine that there is a tool which makes mobile development available to anyone with little or no expertise. </em></p>
-                <div class="name-wrapper">
-                  <div class="testimonial-name">Tarlan Isaev</div>
-                  <div class="line-break-detail">/</div>
-                  <div class="testimonial-role">Founder - Foodshare</div>
+          <div class="left-arrow w-slider-arrow-left">
+            <img
+              src="images/UI-Button_left3x.png"
+              loading="lazy"
+              width="44"
+              alt=""
+            />
+          </div>
+          <div class="right-arrow w-slider-arrow-right">
+            <img
+              src="images/UI-Button_Right3x.png"
+              loading="lazy"
+              width="44"
+              alt=""
+              class="icon-3"
+            />
+          </div>
+          <div class="slide-nav w-slider-nav w-round"></div>
+        </div>
+        <div class="custom-buttons w-embed w-script">
+          <script>
+            var Webflow = Webflow || [];
+            Webflow.push(function () {
+              var l = $("#flowbaseSlider .w-slider-arrow-left");
+              var r = $("#flowbaseSlider .w-slider-arrow-right");
+              $("#flowbaseSlider")
+                .on("click", ".back-button", function () {
+                  l.trigger("tap");
+                })
+                .on("click", ".next-button", function () {
+                  r.trigger("tap");
+                });
+            });
+          </script>
+        </div>
+      </div>
+      <div
+        data-delay="4000"
+        data-animation="slide"
+        class="testimonyslider w-slider"
+        data-autoplay="false"
+        data-easing="ease-in-out"
+        data-hide-arrows="false"
+        data-disable-swipe="false"
+        data-autoplay-limit="0"
+        data-nav-spacing="8"
+        data-duration="500"
+        data-infinite="true"
+      >
+        <div class="mask w-slider-mask">
+          <div class="slidetestimony w-slide">
+            <div class="w-layout-grid grid_4x1">
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobOrange4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                      sizes="(max-width: 479px) 70vw, 180px"
+                      srcset="
+                        images/blobOrange4x-p-500.png 500w,
+                        images/blobOrange4x.png       760w
+                      "
+                    /><img
+                      src="images/testimonial_92x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Ganesh SP</h3>
+                  <p class="tertiarytext centertext">Engineering - Atlassian</p>
+                  <p class="paragraph_italic centertext graysmall">
+                    &quot;I had quickly created a working demo of an app in 2
+                    hours and got a major deal thanks to @flutterflow.&quot;
+                  </p>
                 </div>
-              </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobGreen4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                    /><img
+                      src="images/testimonial_102x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Nick Karwowski</h3>
+                  <p class="tertiarytext centertext">Founder - TAGALONG</p>
+                  <p class="paragraph_italic centertext graysmall">
+                    &quot;We’ve gone from feeling helpless about our platform to
+                    feeling hopeful about our future in a manner of weeks. It’s
+                    a little premature to say, but FlutterFlow might have saved
+                    our business.&quot;
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobOrange4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                      sizes="(max-width: 479px) 75vw, 180px"
+                      srcset="
+                        images/blobOrange4x-p-500.png 500w,
+                        images/blobOrange4x.png       760w
+                      "
+                    /><img
+                      src="images/testimonial_142x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Graciela Carrillo</h3>
+                  <p class="tertiarytext centertext">Founder</p>
+                  <p class="paragraph_italic centertext graysmall">
+                    “I feel like I know exactly what product-market fit feels
+                    like from the user side thanks to them.”
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobOrange4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                    /><img
+                      src="images/testimonial_72x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Jos H.</h3>
+                  <p class="tertiarytext centertext">Founder / CEO<br /></p>
+                  <p class="paragraph_italic centertext graysmall">
+                    &quot;There are very few limitations and the team are
+                    amazing with new features and fixes being added on a weekly
+                    basis - incredible!&quot;
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slidetestimony_alt w-slide">
+            <div class="w-layout-grid grid_4x1">
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobOrange4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                      sizes="(max-width: 479px) 75vw, 180px"
+                      srcset="
+                        images/blobOrange4x-p-500.png 500w,
+                        images/blobOrange4x.png       760w
+                      "
+                    /><img
+                      src="images/testimonial_62x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Juan Sebastian R</h3>
+                  <p class="tertiarytext centertext">CEO - Founder</p>
+                  <p class="paragraph_italic centertext graysmall">
+                    &quot;Flutter flow is a great tool that allows you to build
+                    mobile and web applications in a very easy way. It is an
+                    example of the future of low code.&quot;
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobGreen4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                    /><img
+                      src="images/testimonial_52x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Samuel Cousin</h3>
+                  <p class="tertiarytext centertext">NoCode Engineer</p>
+                  <p class="paragraph_italic centertext graysmall">
+                    “Overall, building with FlutterFlow has been interesting and
+                    has enabled me to learn how to build apps with flutter but I
+                    would not sacrifice the time saving aspect of FlutterFlow
+                    for traditional app development.”
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobPurple4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                      sizes="(max-width: 479px) 75vw, 180px"
+                      srcset="
+                        images/blobPurple4x-p-500.png 500w,
+                        images/blobPurple4x.png       760w
+                      "
+                    /><img
+                      src="images/testimonial_42x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">John Jackovin</h3>
+                  <p class="tertiarytext centertext">
+                    Executive Director at BrokerTech Ventures Accelerator &amp;
+                    Co-Founder Armchair
+                  </p>
+                  <p class="paragraph_italic centertext graysmall">
+                    “FlutterFlow allows us to get to market quickly, test,
+                    adjust, and then continue to iterate in very short cycles.
+                    We wouldn’t be anywhere close to where we are today without
+                    FlutterFlow.”
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://twitter.com/ganeshsp007/status/1482351175152586754"
+                target="_blank"
+                class="quotecard w-inline-block"
+              >
+                <div class="newquotecontent w-clearfix">
+                  <div class="newquoteavatarsection">
+                    <img
+                      src="images/blobOrange4x.png"
+                      loading="lazy"
+                      width="180"
+                      alt=""
+                    /><img
+                      src="images/testimonial_132x.png"
+                      loading="lazy"
+                      width="140"
+                      alt=""
+                      class="useravatar"
+                    />
+                  </div>
+                  <h3 class="heading-15">Sirian Maathuis</h3>
+                  <p class="tertiarytext centertext">
+                    Co-Founder / Designer<br />
+                  </p>
+                  <p class="paragraph_italic centertext graysmall">
+                    “FlutterFlow has helped me learn Flutter as well as the
+                    general app building process. It is not as accessible as
+                    some comparable tools, but allows for much more
+                    possibilities. It has helped me build great working apps,
+                    which are 1:1 with my custom design and work very well on
+                    all platforms.”
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="left-arrow w-slider-arrow-left"><img src="images/UI-Button_left3x.png" loading="lazy" width="44" alt=""></div>
-        <div class="right-arrow w-slider-arrow-right"><img src="images/UI-Button_Right3x.png" loading="lazy" width="44" alt="" class="icon-3"></div>
-        <div class="slide-nav w-slider-nav w-round"></div>
-      </div>
-      <div class="custom-buttons w-embed w-script">
-        <script>
-var Webflow = Webflow || [];
-Webflow.push(function() {
-  var l = $('#flowbaseSlider .w-slider-arrow-left');
-  var r = $('#flowbaseSlider .w-slider-arrow-right');
-  $('#flowbaseSlider')
-    .on('click', '.back-button', function() {
-      l.trigger('tap');
-    })
-    .on('click', '.next-button', function() {
-      r.trigger('tap');
-    });
-});
-</script>
+        <div class="left-arrow-2 w-slider-arrow-left">
+          <img src="images/arrow_back5x.png" loading="lazy" width="60" alt="" />
+        </div>
+        <div class="right-arrow-2 w-slider-arrow-right">
+          <img src="images/arrowRight5x.png" loading="lazy" width="44" alt="" />
+        </div>
+        <div class="slide-nav showcase reviews w-slider-nav w-round"></div>
       </div>
     </div>
-    <div data-delay="4000" data-animation="slide" class="testimonyslider w-slider" data-autoplay="false" data-easing="ease-in-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="8" data-duration="500" data-infinite="true">
-      <div class="mask w-slider-mask">
-        <div class="slidetestimony w-slide">
-          <div class="w-layout-grid grid_4x1">
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobOrange4x.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 70vw, 180px" srcset="images/blobOrange4x-p-500.png 500w, images/blobOrange4x.png 760w"><img src="images/testimonial_92x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Ganesh SP</h3>
-                <p class="tertiarytext centertext">Engineering - Atlassian</p>
-                <p class="paragraph_italic centertext graysmall">&quot;I had quickly created a working demo of an app in 2 hours and got a major deal thanks to @flutterflow.&quot;</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobGreen4x.png" loading="lazy" width="180" alt=""><img src="images/testimonial_102x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Nick Karwowski</h3>
-                <p class="tertiarytext centertext">Founder - TAGALONG</p>
-                <p class="paragraph_italic centertext graysmall">&quot;We’ve gone from feeling helpless about our platform to feeling hopeful about our future in a manner of weeks. It’s a little premature to say, but FlutterFlow might have saved our business.&quot;</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobOrange4x.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 75vw, 180px" srcset="images/blobOrange4x-p-500.png 500w, images/blobOrange4x.png 760w"><img src="images/testimonial_142x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Graciela Carrillo</h3>
-                <p class="tertiarytext centertext">Founder</p>
-                <p class="paragraph_italic centertext graysmall">“I feel like I know exactly what product-market fit feels like from the user side thanks to them.”</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobOrange4x.png" loading="lazy" width="180" alt=""><img src="images/testimonial_72x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Jos H.</h3>
-                <p class="tertiarytext centertext">Founder / CEO<br></p>
-                <p class="paragraph_italic centertext graysmall">&quot;There are very few limitations and the team are amazing with new features and fixes being added on a weekly basis - incredible!&quot;</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="slidetestimony_alt w-slide">
-          <div class="w-layout-grid grid_4x1">
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobOrange4x.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 75vw, 180px" srcset="images/blobOrange4x-p-500.png 500w, images/blobOrange4x.png 760w"><img src="images/testimonial_62x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Juan Sebastian R</h3>
-                <p class="tertiarytext centertext">CEO - Founder</p>
-                <p class="paragraph_italic centertext graysmall">&quot;Flutter flow is a great tool that allows you to build mobile and web applications in a very easy way. It is an example of the future of low code.&quot;</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobGreen4x.png" loading="lazy" width="180" alt=""><img src="images/testimonial_52x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Samuel Cousin</h3>
-                <p class="tertiarytext centertext">NoCode Engineer</p>
-                <p class="paragraph_italic centertext graysmall">“Overall, building with FlutterFlow has been interesting and has enabled me to learn how to build apps with flutter but I would not sacrifice the time saving aspect of FlutterFlow for traditional app development.”</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobPurple4x.png" loading="lazy" width="180" alt="" sizes="(max-width: 479px) 75vw, 180px" srcset="images/blobPurple4x-p-500.png 500w, images/blobPurple4x.png 760w"><img src="images/testimonial_42x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">John Jackovin</h3>
-                <p class="tertiarytext centertext">Executive Director at BrokerTech Ventures Accelerator &amp; Co-Founder Armchair</p>
-                <p class="paragraph_italic centertext graysmall">“FlutterFlow allows us to get to market quickly, test, adjust, and then continue to iterate in very short cycles. We wouldn’t be anywhere close to where we are today without FlutterFlow.”</p>
-              </div>
-            </a>
-            <a href="https://twitter.com/ganeshsp007/status/1482351175152586754" target="_blank" class="quotecard w-inline-block">
-              <div class="newquotecontent w-clearfix">
-                <div class="newquoteavatarsection"><img src="images/blobOrange4x.png" loading="lazy" width="180" alt=""><img src="images/testimonial_132x.png" loading="lazy" width="140" alt="" class="useravatar"></div>
-                <h3 class="heading-15">Sirian Maathuis</h3>
-                <p class="tertiarytext centertext">Co-Founder / Designer<br></p>
-                <p class="paragraph_italic centertext graysmall">“FlutterFlow has helped me learn Flutter as well as the general app building process. It is not as accessible as some comparable tools, but allows for much more possibilities. It has helped me build great working apps, which are 1:1 with my custom design and work very well on all platforms.”</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="left-arrow-2 w-slider-arrow-left"><img src="images/arrow_back5x.png" loading="lazy" width="60" alt=""></div>
-      <div class="right-arrow-2 w-slider-arrow-right"><img src="images/arrowRight5x.png" loading="lazy" width="44" alt=""></div>
-      <div class="slide-nav showcase reviews w-slider-nav w-round"></div>
-    </div>
-  </div>
-  <div class="testimonial-section">
-    <div class="container-9">
-      <div data-delay="4000" data-animation="outin" class="testimonial-slider w-slider" data-autoplay="false" data-easing="ease-out" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="8" data-duration="300" data-infinite="true">
-        <div class="mask-2 w-slider-mask">
-          <div class="slide-2 w-slide">
-            <div class="slide-wrapper">
-              <div class="w-layout-grid slide-content-grid">
-                <div id="w-node-_78048ade-f682-e57e-8a3f-94c7ce76ad6c-5a13adfb" class="quote-wrapper">
-                  <div class="author-wrapper">
-                    <div class="author-name">Vetri</div>
-                    <div class="buttonarea_flex alignleft">
-                      <a href="https://www.atlasfin.com" target="_blank" class="bold-span">Atlas</a>
-                      <div class="author-role">CTO &amp; Co-Founder</div>
+    <div class="testimonial-section">
+      <div class="container-9">
+        <div
+          data-delay="4000"
+          data-animation="outin"
+          class="testimonial-slider w-slider"
+          data-autoplay="false"
+          data-easing="ease-out"
+          data-hide-arrows="false"
+          data-disable-swipe="false"
+          data-autoplay-limit="0"
+          data-nav-spacing="8"
+          data-duration="300"
+          data-infinite="true"
+        >
+          <div class="mask-2 w-slider-mask">
+            <div class="slide-2 w-slide">
+              <div class="slide-wrapper">
+                <div class="w-layout-grid slide-content-grid">
+                  <div
+                    id="w-node-_78048ade-f682-e57e-8a3f-94c7ce76ad6c-5a13adfb"
+                    class="quote-wrapper"
+                  >
+                    <div class="author-wrapper">
+                      <div class="author-name">Vetri</div>
+                      <div class="buttonarea_flex alignleft">
+                        <a
+                          href="https://www.atlasfin.com"
+                          target="_blank"
+                          class="bold-span"
+                          >Atlas</a
+                        >
+                        <div class="author-role">CTO &amp; Co-Founder</div>
+                      </div>
                     </div>
-                  </div><img loading="lazy" width="26" src="images/quote_marks.svg" alt="" class="quote-icon">
-                  <p class="quote-paragraph"><em>Velocity is crucial for a startup. With Flutterflow, we were able to build and publish our app across iOS, Android, and Web within a month. It was a delightful developer experience, the performance was fast/fluid, and we didn’t have to compromise on any functionality. Feedback from customers has been terrific — both in terms of what they say when we talk to them and their daily usage/engagement. We couldn&#x27;t be more thrilled with our experience.&quot;</em></p>
-                  <div class="w-layout-grid grid-9">
-                    <a href="https://apps.apple.com/us/app/atlas-modern-credit-card/id1617487581" target="_blank" class="w-inline-block"><img loading="lazy" width="135" src="images/app_store_button.svg" alt="" class="appstorebutton"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.exto.arrow" target="_blank" class="w-inline-block"><img loading="lazy" width="135" src="images/playStore_button.svg" alt="" class="appstorebutton"></a>
+                    <img
+                      loading="lazy"
+                      width="26"
+                      src="images/quote_marks.svg"
+                      alt=""
+                      class="quote-icon"
+                    />
+                    <p class="quote-paragraph">
+                      <em
+                        >Velocity is crucial for a startup. With Flutterflow, we
+                        were able to build and publish our app across iOS,
+                        Android, and Web within a month. It was a delightful
+                        developer experience, the performance was fast/fluid,
+                        and we didn’t have to compromise on any functionality.
+                        Feedback from customers has been terrific — both in
+                        terms of what they say when we talk to them and their
+                        daily usage/engagement. We couldn&#x27;t be more
+                        thrilled with our experience.&quot;</em
+                      >
+                    </p>
+                    <div class="w-layout-grid grid-9">
+                      <a
+                        href="https://apps.apple.com/us/app/atlas-modern-credit-card/id1617487581"
+                        target="_blank"
+                        class="w-inline-block"
+                        ><img
+                          loading="lazy"
+                          width="135"
+                          src="images/app_store_button.svg"
+                          alt=""
+                          class="appstorebutton"
+                      /></a>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.exto.arrow"
+                        target="_blank"
+                        class="w-inline-block"
+                        ><img
+                          loading="lazy"
+                          width="135"
+                          src="images/playStore_button.svg"
+                          alt=""
+                          class="appstorebutton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="image-wrapper-2">
+                    <div class="testimonial-image-base">
+                      <img
+                        sizes="(max-width: 767px) 90vw, (max-width: 1439px) 479.546875px, (max-width: 1919px) 503.140625px, 597.46875px"
+                        srcset="
+                          images/showcase_AtlasApp2x-p-500.png   500w,
+                          images/showcase_AtlasApp2x-p-800.png   800w,
+                          images/showcase_AtlasApp2x-p-1080.png 1080w,
+                          images/showcase_AtlasApp2x.png        1500w
+                        "
+                        loading="lazy"
+                        src="images/showcase_AtlasApp2x.png"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                      <div class="rotated-square"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="image-wrapper-2">
-                  <div class="testimonial-image-base"><img sizes="(max-width: 767px) 90vw, (max-width: 1439px) 479.546875px, (max-width: 1919px) 503.140625px, 597.46875px" srcset="images/showcase_AtlasApp2x-p-500.png 500w, images/showcase_AtlasApp2x-p-800.png 800w, images/showcase_AtlasApp2x-p-1080.png 1080w, images/showcase_AtlasApp2x.png 1500w" loading="lazy" src="images/showcase_AtlasApp2x.png" alt="" class="testimonial-image">
-                    <div class="rotated-square"></div>
+              </div>
+            </div>
+            <div class="slide-2 w-slide">
+              <div class="slide-wrapper">
+                <div class="w-layout-grid slide-content-grid">
+                  <div
+                    id="w-node-d5ee20b4-d331-f733-fad1-fcb13e18350f-5a13adfb"
+                    class="quote-wrapper"
+                  >
+                    <div class="author-wrapper">
+                      <div class="author-name">Thomas Coiner</div>
+                      <div class="author-role">
+                        CEO &amp; Founder
+                        <span class="bold-span">ProU Sports</span>
+                      </div>
+                    </div>
+                    <img
+                      loading="lazy"
+                      width="26"
+                      src="images/quote_marks.svg"
+                      alt=""
+                      class="quote-icon"
+                    />
+                    <p class="quote-paragraph">
+                      <em
+                        >FlutterFlow has helped our startup stay incredibly
+                        agile and has kept our costs down. Speed is everything
+                        for us and the ability to develop and iterate our
+                        product based on user experience, not assumptions, is
+                        critical for our success</em
+                      >
+                    </p>
+                    <a
+                      href="https://apps.apple.com/us/app/prou-sports/id1555921824"
+                      target="_blank"
+                      class="w-inline-block"
+                      ><img
+                        loading="lazy"
+                        width="135"
+                        src="images/app_store_button.svg"
+                        alt=""
+                        class="appstorebutton"
+                    /></a>
+                  </div>
+                  <div class="image-wrapper-2">
+                    <div class="testimonial-image-base">
+                      <img
+                        sizes="(max-width: 767px) 90vw, (max-width: 1439px) 527.0625px, (max-width: 1919px) 520px, 656.671875px"
+                        srcset="
+                          images/showcase_ProU2x-p-500.png   500w,
+                          images/showcase_ProU2x-p-800.png   800w,
+                          images/showcase_ProU2x-p-1080.png 1080w,
+                          images/showcase_ProU2x.png        1500w
+                        "
+                        loading="lazy"
+                        src="images/showcase_ProU2x.png"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                      <div class="rotated-square"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="slide-wrapper">
+                <div class="w-layout-grid slide-content-grid">
+                  <div
+                    id="w-node-_7cd770e1-727d-7d8b-b99e-7088f2128116-5a13adfb"
+                    class="quote-wrapper"
+                  >
+                    <div class="author-wrapper">
+                      <div class="author-name">Josh</div>
+                      <div class="author-role">
+                        CEO <span class="bold-span">Sparkcharge</span>
+                      </div>
+                    </div>
+                    <img
+                      loading="lazy"
+                      width="26"
+                      src="images/quote_marks.svg"
+                      alt=""
+                      class="quote-icon"
+                    />
+                    <p class="quote-paragraph">
+                      <em
+                        >Building our mobile app on FlutterFlow let us design,
+                        build, and migrate from our previous platform in less
+                        than three months. Since then, we&#x27;ve been able to
+                        quickly add new features without the complexity of
+                        custom code. We love the power and flexibility the
+                        FlutterFlow platform provides with the benefits of Code
+                        and No Code together.</em
+                      >
+                    </p>
+                    <div class="w-layout-grid grid-9">
+                      <a
+                        href="https://apps.apple.com/us/app/currently-ev-charging/id1624940687"
+                        target="_blank"
+                        class="w-inline-block"
+                        ><img
+                          loading="lazy"
+                          width="135"
+                          src="images/app_store_button.svg"
+                          alt=""
+                          class="appstorebutton"
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="image-wrapper-2">
+                    <div class="testimonial-image-base">
+                      <img
+                        sizes="(max-width: 767px) 90vw, (max-width: 1439px) 527.0625px, (max-width: 1919px) 520px, 656.671875px"
+                        srcset="
+                          images/showcase_Currently2x-p-500.png  500w,
+                          images/showcase_Currently2x-p-800.png  800w,
+                          images/showcase_Currently2x.png       1500w
+                        "
+                        loading="lazy"
+                        src="images/showcase_Currently2x.png"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                      <div class="rotated-square"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="slide-2 w-slide">
-            <div class="slide-wrapper">
-              <div class="w-layout-grid slide-content-grid">
-                <div id="w-node-d5ee20b4-d331-f733-fad1-fcb13e18350f-5a13adfb" class="quote-wrapper">
-                  <div class="author-wrapper">
-                    <div class="author-name">Thomas Coiner</div>
-                    <div class="author-role">CEO &amp; Founder <span class="bold-span">ProU Sports</span></div>
-                  </div><img loading="lazy" width="26" src="images/quote_marks.svg" alt="" class="quote-icon">
-                  <p class="quote-paragraph"><em>FlutterFlow has helped our startup stay incredibly agile and has kept our costs down. Speed is everything for us and the ability to develop and iterate our product based on user experience, not assumptions, is critical for our success</em></p>
-                  <a href="https://apps.apple.com/us/app/prou-sports/id1555921824" target="_blank" class="w-inline-block"><img loading="lazy" width="135" src="images/app_store_button.svg" alt="" class="appstorebutton"></a>
-                </div>
-                <div class="image-wrapper-2">
-                  <div class="testimonial-image-base"><img sizes="(max-width: 767px) 90vw, (max-width: 1439px) 527.0625px, (max-width: 1919px) 520px, 656.671875px" srcset="images/showcase_ProU2x-p-500.png 500w, images/showcase_ProU2x-p-800.png 800w, images/showcase_ProU2x-p-1080.png 1080w, images/showcase_ProU2x.png 1500w" loading="lazy" src="images/showcase_ProU2x.png" alt="" class="testimonial-image">
-                    <div class="rotated-square"></div>
-                  </div>
-                </div>
-              </div>
+          <div class="left-arrow-3 w-slider-arrow-left">
+            <img
+              loading="lazy"
+              width="32"
+              src="images/arrow_back5x.png"
+              alt=""
+            />
+          </div>
+          <div class="right-arrow-3 w-slider-arrow-right">
+            <img
+              loading="lazy"
+              width="32"
+              src="images/arrowRight5x.png"
+              alt=""
+            />
+          </div>
+          <div class="slide-nav showcase w-slider-nav w-round"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-w-id="07cdf0d7-7c0a-fe06-34be-e2916082e2ba"
+      class="body_500 _3d_section wf-section"
+    >
+      <div class="container-fluid paddingtop centertext w-container">
+        <h1 class="heading_50px_center">Download Your Code &amp; Deploy</h1>
+        <h3 class="headergray-20px centertext">
+          Export clean code or use Codemagic to deploy to App stores.
+        </h3>
+        <div class="buttonarea_flex hidemobile">
+          <a
+            href="https://flutterflow-staging.web.app/project/clone-project-management-app-r9mgyz"
+            target="_blank"
+            class="btn btn_tertiary w-button"
+            >Clone Project</a
+          >
+          <a
+            href="https://flutterflow-staging.web.app/code/clone-project-management-app-r9mgyz"
+            target="_blank"
+            class="btn btn_info w-button"
+            >View Code</a
+          >
+        </div>
+        <div class="buttonarea_flex hidedesktop">
+          <a
+            href="https://flutterflow.io/create-account"
+            target="_blank"
+            class="btn btnprimary w-button"
+            >Create Account</a
+          >
+        </div>
+      </div>
+      <div class="pad_bottom_70px _3d_section w-container">
+        <div class="image-wrapper">
+          <img
+            src="images/view_SubscriptionDesign2x.jpg"
+            loading="lazy"
+            width="1600"
+            srcset="
+              images/view_SubscriptionDesign2x-p-500.jpeg   500w,
+              images/view_SubscriptionDesign2x-p-800.jpeg   800w,
+              images/view_SubscriptionDesign2x-p-1080.jpeg 1080w,
+              images/view_SubscriptionDesign2x-p-1600.jpeg 1600w,
+              images/view_SubscriptionDesign2x-p-2000.jpeg 2000w,
+              images/view_SubscriptionDesign2x-p-2600.jpeg 2600w,
+              images/view_SubscriptionDesign2x.jpg         3200w
+            "
+            alt="Adding "
+            sizes="100vw"
+            class="image-one"
+          /><img
+            src="images/view_code2x.jpg"
+            loading="lazy"
+            width="1600"
+            srcset="
+              images/view_code2x-p-500.jpeg   500w,
+              images/view_code2x-p-800.jpeg   800w,
+              images/view_code2x-p-1080.jpeg 1080w,
+              images/view_code2x-p-1600.jpeg 1600w,
+              images/view_code2x-p-2000.jpeg 2000w,
+              images/view_code2x-p-2600.jpeg 2600w,
+              images/view_code2x.jpg         3200w
+            "
+            alt="Your code is automatically generated in flutterflow for all your screens."
+            sizes="100vw"
+            class="image-two"
+          />
+        </div>
+        <img
+          class="imgfluid codeview"
+          src="images/codeView_new2x.png"
+          width="1187"
+          alt="Codeview in Flutterflow -- as you build your app in Flutterflow; automatically get generated code that you can download."
+          style="opacity: 0"
+          sizes="(max-width: 1279px) 100vw, 1350.2705078125px"
+          data-w-id="20fd07cc-c96f-8ed7-4886-89d3d094d5aa"
+          loading="lazy"
+          srcset="
+            images/codeView_new2x-p-500.png   500w,
+            images/codeView_new2x-p-800.png   800w,
+            images/codeView_new2x-p-1080.png 1080w,
+            images/codeView_new2x.png        2300w
+          "
+        />
+      </div>
+    </div>
+    <div class="paddingsides darkbg-600 wf-section">
+      <p class="header_paragraph centertext paddingbottom">Featured In</p>
+      <div class="columns-12 w-row">
+        <div class="column-13 w-col w-col-6">
+          <a
+            href="https://youtu.be/40_tpAHwWcM?t=640"
+            target="_blank"
+            class="featuresectionlink w-inline-block w-clearfix"
+            ><img
+              src="images/google_io.svg"
+              loading="lazy"
+              alt="Google I/O Logo -- Vector - Flutterflow Launch."
+              class="image-10"
+          /></a>
+        </div>
+        <div class="column-13 w-col w-col-6">
+          <a
+            href="https://youtu.be/40_tpAHwWcM?t=640"
+            target="_blank"
+            class="w-inline-block"
+          >
+            <div class="w-embed">
+              <a
+                href="https://www.capterra.com/app-building-software/#shortlist"
+                ><img
+                  alt="Capterra Shortlist for App Building Jun-22"
+                  title="Shortlist Badge"
+                  target="_blank"
+                  style="width: 140px; border: 0px"
+                  src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/CA_Badge_Shortlist_2022_FullColor-Positive.png"
+              /></a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ctaarea wf-section">
+      <div class="container-fluid paddingsides ctatop w-container">
+        <div class="form-block w-clearfix w-form">
+          <form
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            action="https://flutterflow.us2.list-manage.com/subscribe/post?u=544d5264f5e71e5fa379d41f5&amp;amp;id=43c1c0eebb"
+            method="post"
+            class="form w-clearfix"
+          >
+            <label for="email" class="field-label"
+              >Sign up for our newsletter</label
+            ><input
+              type="email"
+              class="text-field w-input"
+              maxlength="256"
+              name="email"
+              data-name="Email"
+              placeholder="Enter your email to sign up for our newsletter"
+              id="email"
+              required=""
+            /><input
+              type="submit"
+              value="Submit"
+              data-wait="Please wait..."
+              class="btn btn_tertiary right w-button"
+            />
+          </form>
+          <div class="success-message w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div class="text-block-2">
+              Oops! Something went wrong while submitting the form.
             </div>
           </div>
-          <div class="w-slide">
-            <div class="slide-wrapper">
-              <div class="w-layout-grid slide-content-grid">
-                <div id="w-node-_7cd770e1-727d-7d8b-b99e-7088f2128116-5a13adfb" class="quote-wrapper">
-                  <div class="author-wrapper">
-                    <div class="author-name">Josh</div>
-                    <div class="author-role">CEO <span class="bold-span">Sparkcharge</span></div>
-                  </div><img loading="lazy" width="26" src="images/quote_marks.svg" alt="" class="quote-icon">
-                  <p class="quote-paragraph"><em>Building our mobile app on FlutterFlow let us design, build, and migrate from our previous platform in less than three months. Since then, we&#x27;ve been able to quickly add new features without the complexity of custom code. We love the power and flexibility the FlutterFlow platform provides with the benefits of Code and No Code together.</em></p>
-                  <div class="w-layout-grid grid-9">
-                    <a href="https://apps.apple.com/us/app/currently-ev-charging/id1624940687" target="_blank" class="w-inline-block"><img loading="lazy" width="135" src="images/app_store_button.svg" alt="" class="appstorebutton"></a>
-                  </div>
-                </div>
-                <div class="image-wrapper-2">
-                  <div class="testimonial-image-base"><img sizes="(max-width: 767px) 90vw, (max-width: 1439px) 527.0625px, (max-width: 1919px) 520px, 656.671875px" srcset="images/showcase_Currently2x-p-500.png 500w, images/showcase_Currently2x-p-800.png 800w, images/showcase_Currently2x.png 1500w" loading="lazy" src="images/showcase_Currently2x.png" alt="" class="testimonial-image">
-                    <div class="rotated-square"></div>
-                  </div>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="ctacontent">
+        <a
+          href="https://cloud.google.com/find-a-partner/partner/flutterflow"
+          target="_blank"
+          class="ctalink w-inline-block w-clearfix"
+          ><img
+            src="images/googleCloud.svg"
+            loading="lazy"
+            alt=""
+            class="image-10 small"
+        /></a>
+        <a
+          href="https://www.capterra.ae/reviews/1027864/flutterflow"
+          target="_blank"
+          class="ctalink w-inline-block w-clearfix"
+          ><img
+            src="images/badge-1.svg"
+            loading="lazy"
+            alt=""
+            class="image-10 small"
+        /></a>
+      </div>
+      <h2 class="heading-3">
+        <a href="index.html#" class="fire-no-mobile">🔥 </a>Join over 250k users
+        🔥<br />
+      </h2>
+      <div class="buttonarea_flex">
+        <a href="https://app.flutterflow.io" class="btn btn_info w-button"
+          >Start Building</a
+        >
+      </div>
+    </div>
+    <footer id="footer" class="footer wf-section">
+      <div class="container-3 w-container">
+        <div class="footer-flex-container">
+          <div class="div-block-2">
+            <a href="index.html#" class="footer-logo-link"
+              ><img
+                src="images/logo_primary_color.svg"
+                alt="FlutterFlow -- Logo Vector"
+                class="footer-image"
+            /></a>
+            <p class="paragraph-4">
+              Building applications has never been easier.
+            </p>
+            <div class="html-embed w-embed">
+              <a
+                href="https://www.producthunt.com/posts/flutterflow?utm_source=badge-golden-kitty-badge&amp;utm_medium=badge&amp;utm_souce=badge-flutterflow"
+                target="_blank"
+                ><img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/golden-kitty-badge.svg?post_id=285148&amp;theme=dark"
+                  alt="FlutterFlow - Build cross-platform Flutter mobile apps visually | Product Hunt"
+                  style="width: 250px; height: 54px"
+                  width="250"
+                  height="54"
+              /></a>
             </div>
           </div>
-        </div>
-        <div class="left-arrow-3 w-slider-arrow-left"><img loading="lazy" width="32" src="images/arrow_back5x.png" alt=""></div>
-        <div class="right-arrow-3 w-slider-arrow-right"><img loading="lazy" width="32" src="images/arrowRight5x.png" alt=""></div>
-        <div class="slide-nav showcase w-slider-nav w-round"></div>
-      </div>
-    </div>
-  </div>
-  <div data-w-id="07cdf0d7-7c0a-fe06-34be-e2916082e2ba" class="body_500 _3d_section wf-section">
-    <div class="container-fluid paddingtop centertext w-container">
-      <h1 class="heading_50px_center">Download Your Code &amp; Deploy</h1>
-      <h3 class="headergray-20px centertext">Export clean code or use Codemagic to deploy to App stores.</h3>
-      <div class="buttonarea_flex hidemobile">
-        <a href="https://flutterflow-staging.web.app/project/clone-project-management-app-r9mgyz" target="_blank" class="btn btn_tertiary w-button">Clone Project</a>
-        <a href="https://flutterflow-staging.web.app/code/clone-project-management-app-r9mgyz" target="_blank" class="btn btn_info w-button">View Code</a>
-      </div>
-      <div class="buttonarea_flex hidedesktop">
-        <a href="https://flutterflow.io/create-account" target="_blank" class="btn btnprimary w-button">Create Account</a>
-      </div>
-    </div>
-    <div class="pad_bottom_70px _3d_section w-container">
-      <div class="image-wrapper"><img src="images/view_SubscriptionDesign2x.jpg" loading="lazy" width="1600" srcset="images/view_SubscriptionDesign2x-p-500.jpeg 500w, images/view_SubscriptionDesign2x-p-800.jpeg 800w, images/view_SubscriptionDesign2x-p-1080.jpeg 1080w, images/view_SubscriptionDesign2x-p-1600.jpeg 1600w, images/view_SubscriptionDesign2x-p-2000.jpeg 2000w, images/view_SubscriptionDesign2x-p-2600.jpeg 2600w, images/view_SubscriptionDesign2x.jpg 3200w" alt="Adding " sizes="100vw" class="image-one"><img src="images/view_code2x.jpg" loading="lazy" width="1600" srcset="images/view_code2x-p-500.jpeg 500w, images/view_code2x-p-800.jpeg 800w, images/view_code2x-p-1080.jpeg 1080w, images/view_code2x-p-1600.jpeg 1600w, images/view_code2x-p-2000.jpeg 2000w, images/view_code2x-p-2600.jpeg 2600w, images/view_code2x.jpg 3200w" alt="Your code is automatically generated in flutterflow for all your screens." sizes="100vw" class="image-two"></div><img class="imgfluid codeview" src="images/codeView_new2x.png" width="1187" alt="Codeview in Flutterflow -- as you build your app in Flutterflow; automatically get generated code that you can download." style="opacity:0" sizes="(max-width: 1279px) 100vw, 1350.2705078125px" data-w-id="20fd07cc-c96f-8ed7-4886-89d3d094d5aa" loading="lazy" srcset="images/codeView_new2x-p-500.png 500w, images/codeView_new2x-p-800.png 800w, images/codeView_new2x-p-1080.png 1080w, images/codeView_new2x.png 2300w">
-    </div>
-  </div>
-  <div class="paddingsides darkbg-600 wf-section">
-    <p class="header_paragraph centertext paddingbottom">Featured In</p>
-    <div class="columns-12 w-row">
-      <div class="column-13 w-col w-col-6">
-        <a href="https://youtu.be/40_tpAHwWcM?t=640" target="_blank" class="featuresectionlink w-inline-block w-clearfix"><img src="images/google_io.svg" loading="lazy" alt="Google I/O Logo -- Vector - Flutterflow Launch." class="image-10"></a>
-      </div>
-      <div class="column-13 w-col w-col-6">
-        <a href="https://youtu.be/40_tpAHwWcM?t=640" target="_blank" class="w-inline-block">
-          <div class="w-embed">
-            <a href="https://www.capterra.com/app-building-software/#shortlist"><img alt="Capterra Shortlist for App Building Jun-22" title="Shortlist Badge" target="_blank" style="width: 140px; border: 0px" src="https://capterra.s3.amazonaws.com/assets/images/gdm-badges/CA_Badge_Shortlist_2022_FullColor-Positive.png"></a>
+          <div class="footermobile">
+            <h2 class="footer-heading">Product</h2>
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a href="features.html" class="footer-link">Features</a>
+              </li>
+              <li>
+                <a href="pricing.html" class="footer-link">Pricing<br /></a>
+              </li>
+              <li>
+                <a href="student-pricing.html" class="footer-link">Education</a>
+              </li>
+              <li>
+                <a href="flutterflow-desktop-app.html" class="footer-link"
+                  >Mac OS App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://app.flutterflow.io/"
+                  target="_blank"
+                  class="footer-link"
+                  >Login</a
+                >
+              </li>
+            </ul>
           </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="ctaarea wf-section">
-    <div class="container-fluid paddingsides ctatop w-container">
-      <div class="form-block w-clearfix w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" action="https://flutterflow.us2.list-manage.com/subscribe/post?u=544d5264f5e71e5fa379d41f5&amp;amp;id=43c1c0eebb" method="post" class="form w-clearfix"><label for="email" class="field-label">Sign up for our newsletter</label><input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email to sign up for our newsletter" id="email" required=""><input type="submit" value="Submit" data-wait="Please wait..." class="btn btn_tertiary right w-button"></form>
-        <div class="success-message w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="error-message w-form-fail">
-          <div class="text-block-2">Oops! Something went wrong while submitting the form.</div>
-        </div>
-      </div>
-    </div>
-    <div class="ctacontent">
-      <a href="https://cloud.google.com/find-a-partner/partner/flutterflow" target="_blank" class="ctalink w-inline-block w-clearfix"><img src="images/googleCloud.svg" loading="lazy" alt="" class="image-10 small"></a>
-      <a href="https://www.capterra.ae/reviews/1027864/flutterflow" target="_blank" class="ctalink w-inline-block w-clearfix"><img src="images/badge-1.svg" loading="lazy" alt="" class="image-10 small"></a>
-    </div>
-    <h2 class="heading-3">
-      <a href="index.html#" class="fire-no-mobile">🔥 </a>Join over 250k users 🔥<br>
-    </h2>
-    <div class="buttonarea_flex">
-      <a href="https://app.flutterflow.io" class="btn btn_info w-button">Start Building</a>
-    </div>
-  </div>
-  <footer id="footer" class="footer wf-section">
-    <div class="container-3 w-container">
-      <div class="footer-flex-container">
-        <div class="div-block-2">
-          <a href="index.html#" class="footer-logo-link"><img src="images/logo_primary_color.svg" alt="FlutterFlow -- Logo Vector" class="footer-image"></a>
-          <p class="paragraph-4">Building applications has never been easier.</p>
-          <div class="html-embed w-embed">
-            <a href="https://www.producthunt.com/posts/flutterflow?utm_source=badge-golden-kitty-badge&amp;utm_medium=badge&amp;utm_souce=badge-flutterflow" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/golden-kitty-badge.svg?post_id=285148&amp;theme=dark" alt="FlutterFlow - Build cross-platform Flutter mobile apps visually | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54"></a>
+          <div class="footermobile">
+            <h2 class="footer-heading">Help</h2>
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a
+                  href="https://docs.flutterflow.io/troubleshooting"
+                  target="_blank"
+                  class="footer-link"
+                  >FAQs<br
+                /></a>
+              </li>
+            </ul>
+            <a
+              href="https://docs.flutterflow.io/"
+              target="_blank"
+              class="footer-link"
+              >Docs</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q"
+              target="_blank"
+              class="footer-link"
+              >Youtube</a
+            >
+            <a
+              href="https://blog.flutterflow.io"
+              target="_blank"
+              class="footer-link"
+              >Blog</a
+            >
+          </div>
+          <div class="footermobile">
+            <h2 class="footer-heading">Company</h2>
+            <ul role="list" class="w-list-unstyled">
+              <li>
+                <a
+                  href="https://community.flutterflow.io/"
+                  target="_blank"
+                  class="footer-link"
+                  >Community</a
+                >
+                <a
+                  href="https://twitter.com/flutterflow"
+                  target="_blank"
+                  class="footer-link"
+                  >Twitter</a
+                >
+                <a
+                  href="https://discord.gg/aQPxDceafR"
+                  target="_blank"
+                  class="footer-link"
+                  >Discord</a
+                >
+                <a
+                  href="mailto:contact+landing@flutterflow.io"
+                  class="footer-link"
+                  >Contact Us</a
+                >
+                <a href="2021.html" class="footer-link">2021 Recap</a>
+              </li>
+            </ul>
+            <a href="about-us.html" class="footer-link">About Us</a>
+          </div>
+          <div class="footermobile">
+            <h2 class="footer-heading">Legal</h2>
+            <a href="tos.html" class="footer-link">Terms of Service</a>
+            <a href="pp.html" class="footer-link">Privacy Policy</a>
+            <a href="tos-marketplace.html" class="footer-link"
+              >Marketplace <br />Terms of Service</a
+            >
           </div>
         </div>
-        <div class="footermobile">
-          <h2 class="footer-heading">Product</h2>
-          <ul role="list" class="w-list-unstyled">
-            <li>
-              <a href="features.html" class="footer-link">Features</a>
-            </li>
-            <li>
-              <a href="pricing.html" class="footer-link">Pricing<br></a>
-            </li>
-            <li>
-              <a href="student-pricing.html" class="footer-link">Education</a>
-            </li>
-            <li>
-              <a href="flutterflow-desktop-app.html" class="footer-link">Mac OS App</a>
-            </li>
-            <li>
-              <a href="https://app.flutterflow.io/" target="_blank" class="footer-link">Login</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footermobile">
-          <h2 class="footer-heading">Help</h2>
-          <ul role="list" class="w-list-unstyled">
-            <li>
-              <a href="https://docs.flutterflow.io/troubleshooting" target="_blank" class="footer-link">FAQs<br></a>
-            </li>
-          </ul>
-          <a href="https://docs.flutterflow.io/" target="_blank" class="footer-link">Docs</a>
-          <a href="https://www.youtube.com/channel/UC5LueiosDVInA6yXE_38i9Q" target="_blank" class="footer-link">Youtube</a>
-          <a href="https://blog.flutterflow.io" target="_blank" class="footer-link">Blog</a>
-        </div>
-        <div class="footermobile">
-          <h2 class="footer-heading">Company</h2>
-          <ul role="list" class="w-list-unstyled">
-            <li>
-              <a href="https://community.flutterflow.io/" target="_blank" class="footer-link">Community</a>
-              <a href="https://twitter.com/flutterflow" target="_blank" class="footer-link">Twitter</a>
-              <a href="https://discord.gg/aQPxDceafR" target="_blank" class="footer-link">Discord</a>
-              <a href="mailto:contact+landing@flutterflow.io" class="footer-link">Contact Us</a>
-              <a href="2021.html" class="footer-link">2021 Recap</a>
-            </li>
-          </ul>
-          <a href="about-us.html" class="footer-link">About Us</a>
-        </div>
-        <div class="footermobile">
-          <h2 class="footer-heading">Legal</h2>
-          <a href="tos.html" class="footer-link">Terms of Service</a>
-          <a href="pp.html" class="footer-link">Privacy Policy</a>
-          <a href="tos-marketplace.html" class="footer-link">Marketplace <br>Terms of Service</a>
+        <div class="w-clearfix">
+          <p class="paragraph-15">Backed By</p>
+          <img
+            src="images/y-combinator-logo-vector.svg"
+            loading="lazy"
+            alt="Y Combinator Logo on FlutterFlow (Vector)"
+            class="image-10 small"
+          />
         </div>
       </div>
-      <div class="w-clearfix">
-        <p class="paragraph-15">Backed By</p><img src="images/y-combinator-logo-vector.svg" loading="lazy" alt="Y Combinator Logo on FlutterFlow (Vector)" class="image-10 small">
+      <div class="copyright">
+        Copyright © 2022 FlutterFlow, Inc. All rights reserved.
       </div>
-    </div>
-    <div class="copyright">Copyright © 2022 FlutterFlow, Inc. All rights reserved. </div>
-  </footer>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=608d9c1a6cbcc01b80952190" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/flutterflow-updated-home.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <script src="__/firebase/8.0.0/firebase-app.js"></script>
-  <script src="__/firebase/8.0.0/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-functions.js"></script>
-  <!--  Initialize Firebase  -->
-  <script src="__/firebase/init.js"></script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-181477965-1">
-</script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  firebase.analytics();
-  gtag('js', new Date());
-  gtag('config', 'UA-181477965-1');
-</script>
-  <!--  [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]  -->
-  <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
-  <script>
-  window.onload = function () {
-    setTimeout(function () {
-    $('.image-wrapper').each(function (index, el) {
-        let firstImage = $(this).find('img')[0].src;
-        let secondImage =$(this).find('img')[1].src;
-        let template = `
+    </footer>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=608d9c1a6cbcc01b80952190"
+      type="text/javascript"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="js/flutterflow-updated-home.js"
+      type="text/javascript"
+    ></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+    <!-- <script src="__/firebase/8.0.0/firebase-app.js"></script>
+    <script src="__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-functions.js"></script> -->
+    <!--  Initialize Firebase  -->
+    <!-- <script src="__/firebase/init.js"></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-181477965-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      firebase.analytics();
+      gtag("js", new Date());
+      gtag("config", "UA-181477965-1");
+    </script> -->
+    <!--  [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]  -->
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          $(".image-wrapper").each(function (index, el) {
+            let firstImage = $(this).find("img")[0].src;
+            let secondImage = $(this).find("img")[1].src;
+            let template = `
       	<div class="beer-slider" data-beer-label="before">
           <img src="${firstImage}">
           <div class="beer-reveal" data-beer-label="after">
@@ -600,43 +1803,43 @@ Webflow.push(function() {
           </div>
         </div>
       `;
-       $(this).find('img')[1].remove();
-       $(this).find('img')[0].remove();
-      $(this).append(template);
-        $.fn.BeerSlider = function (options) {
-          options = options || {};
-          return this.each(function () {
-            new BeerSlider(this, options);
+            $(this).find("img")[1].remove();
+            $(this).find("img")[0].remove();
+            $(this).append(template);
+            $.fn.BeerSlider = function (options) {
+              options = options || {};
+              return this.each(function () {
+                new BeerSlider(this, options);
+              });
+            };
           });
-        };
-      });
-      $(".beer-slider").each(function (index, el) {
-        $(el).BeerSlider({ start: $(el).data("start") })
-      });
-    })
-  }
-</script>
-  <style>.beer-slider {
-    height: 100% !important;
-  }
-  .beer-slider,
-  .beer-slider>img {
-    width: 100% !important;
-  }
-</style>
-  <script>
-(function(){
-      var words = [
-        	'faster',
-          'easier',
-          'more fun',
-          ], i = 0;
-      setInterval(function(){
-          $('#changingword').fadeOut(function(){
-              $(this).html(words[i=(i+1)%words.length]).fadeIn(600);
+          $(".beer-slider").each(function (index, el) {
+            $(el).BeerSlider({ start: $(el).data("start") });
           });
-      }, 4000);
-  })();
-</script>
-</body>
+        });
+      };
+    </script>
+    <style>
+      .beer-slider {
+        height: 100% !important;
+      }
+      .beer-slider,
+      .beer-slider > img {
+        width: 100% !important;
+      }
+    </style>
+    <script>
+      (function () {
+        var words = ["faster", "easier", "more fun"],
+          i = 0;
+        setInterval(function () {
+          $("#changingword").fadeOut(function () {
+            $(this)
+              .html(words[(i = (i + 1) % words.length)])
+              .fadeIn(600);
+          });
+        }, 4000);
+      })();
+    </script>
+  </body>
 </html>

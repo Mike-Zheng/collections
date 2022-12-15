@@ -1,1 +1,0 @@
-define("common",function(require,exports,module){try{top.location.hostname,top.location.hostname!==window.location.hostname&&(top.location.href=window.location.href)}catch(o){top.location.href=window.location.href}});
