@@ -46,10 +46,10 @@
       href="/collections/home/images/favicon.ico"
     />
     <link rel="stylesheet" href="/collections/home/css/style.css" />
+    <link rel="stylesheet" href="/collections/home/css/font-awesome.css" />
     <script src="/collections/home/js/jquery-1.9.1.min.js?v=397754ba49"></script>
     <script src="/collections/home/js/bootstrap.min.js"></script>
     <script src="/collections/home/js/all.js"></script>
-
     <!--[if lt IE 9]>
       <script src="/collections/home/js/html5shiv.min.js?v=0ce8f35589"></script>
     <![endif] -->
@@ -1434,38 +1434,18 @@
     </div>
 
     <script>
-      $("#j_photo_play").photoPlay({
-        thumWidth: 118,
-        thumNum: 5,
-        _width: 730,
-        _height: 460,
-        otherMedia: !0,
-      });
-
-      // t = $(window)
+      // SideTool
       var $window = $(window);
-
-      // r = $('.side_tool_wrap ')
       var $sideTool = $(".side_tool_wrap ");
-
-      // i = r.find('.backtop')
       var $toTop = $(".side_tool_wrap ").find(".backtop");
-
-      // o = $('.record-body')
       var $record = $(".record-body");
-
       var isXX = -1 < location.href.search("detail");
-
-      // function d() {
       function toggleSideTool() {
         1300 < $(window).width() ? $sideTool.show() : $sideTool.hide();
       }
-
-      // function s() {
       function toggleToTop() {
         500 < $(window).scrollTop() ? $toTop.show() : $toTop.hide();
       }
-
       $sideTool.show();
       $record.show();
       toggleSideTool(),
@@ -1488,10 +1468,10 @@
       $toTop.click(function () {
         window.scroll(0, 0), $toTop.next().hide();
       });
+    </script>
 
-      // 待處理
-
-      // function O() {
+    <script>
+      // StickyNav
       function stickyNav() {
         var t = $(".detail-nav"),
           e = $(window).scrollTop();
@@ -1517,9 +1497,12 @@
       stickyNav();
 
       $(window).on("scroll", stickyNav);
-      var q;
-      // var L = [
-      var imgList = [
+    </script>
+
+    <script>
+      // PhotoPlayer
+
+      var photoList = [
         {
           src: "/collections/home/images/house/166589593686288804.jpg!x.water2.jpg",
           small:
@@ -1594,25 +1577,39 @@
         },
       ];
 
+      $("#j_photo_play").photoPlay({
+        thumWidth: 118,
+        thumNum: 5,
+        _width: 730,
+        _height: 460,
+        otherMedia: !0,
+        images: photoList,
+      });
+
+      // 待處理
+
+      var q;
+
       P = "";
 
       $(document).on("click", ".big-picture-close", function () {
         $("#imageCen").hide(), $("body").css("overflow", "visible");
       });
-      var B = !1;
+      var B = false;
+
       function V(t, e) {
         var i,
           n,
-          o = imgList.some(function (t) {
+          o = photoList.some(function (t) {
             return 1 == t.is_full;
           }),
-          a = imgList.length,
-          r = imgList[t],
+          a = photoList.length,
+          r = photoList[t],
           s = o ? t : t + 1,
           d = o ? a - 1 : a;
         $(".big-sum").html(d),
           $(".big-index").html(s),
-          $(".big-title").html(imgList[t].note),
+          $(".big-title").html(photoList[t].note),
           1 == r.is_video
             ? ($(".big-img").hide(),
               (i =
@@ -1641,7 +1638,7 @@
               $(".big-img").attr("src", r.big).show()),
           $(".big-picture-li").find("i").removeClass("ceng"),
           $(".big-picture-li").eq(t).find("i").addClass("ceng"),
-          imgList.some(function (t) {
+          photoList.some(function (t) {
             return 1 == t.is_video;
           }) || $("#detail-swiper-video").hide(),
           8 < d &&
@@ -1681,24 +1678,29 @@
       $(".big-img").load(function () {
         $(this).attr("alt", $(this).attr("src"));
       });
+
       $("#detail-swiper-video").click(function () {
-        imgList.forEach(function (t, e) {
+        photoList.forEach(function (t, e) {
           1 == t.is_video && (V(e, "1"), (q = e));
         });
       });
+
       $(".big-picture-right").click(function () {
-        q >= imgList.length - 1 || V(++q);
+        q >= photoList.length - 1 || V(++q);
       });
+
       $(".big-picture-left").click(function () {
-        var t = imgList.some(function (t) {
+        var t = photoList.some(function (t) {
           return 1 == t.is_full;
         });
         q != (t ? 1 : 0) && V(--q);
       });
+
       $(".big-picture-li").on("click", function () {
         var t = $(this).index();
         V(t), (q = t);
       });
+
       $(".font-size-btn").on("click", function () {
         $(".font-size-btn").removeClass("font-size-select"),
           $(this).addClass("font-size-select"),
@@ -1726,31 +1728,7 @@
                 domain: "591.com.tw",
               }));
       });
-      $("#phoneExplain").on("click", function (t) {
-        hotEventSend("中古屋_撥號說明點擊"),
-          t.stopPropagation(),
-          $.popbox({
-            id: "j_popbox_phoneExplain",
-            title: "電話撥打說明",
-            type: "iframe",
-            size: { width: "580px", height: "480px" },
-            content: {
-              width: "550px",
-              height: "420px",
-              url: "/collections/home/house/phoneExplain",
-              scrolling: "no",
-            },
-            shade: !0,
-          });
-      });
 
-      $("#j_photo_play").photoPlay({
-        thumWidth: 118,
-        thumNum: 5,
-        _width: 730,
-        _height: 460,
-        otherMedia: !0,
-      });
       500 <= $(".detail-feature-text").height() &&
         $(".detail-feature-more").show();
       $(".detail-feature-more").click(function () {

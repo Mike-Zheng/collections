@@ -10,6 +10,7 @@
         _height: 460,
         userId: "",
         otherMedia: !1,
+        images: [],
       },
       t
     );
@@ -23,8 +24,8 @@
         i = e.find(".prev_left"),
         n = e.find(".prev_right"),
         d = e.find(".img_list"),
-        l = (o.thumWidth, o.thumNum, u("#hid_imgs").val());
-      1 == (l = JSON.parse(l))[0].is_video
+        l = (o.thumWidth, o.thumNum, o.images);
+      1 == (l)[0].is_video
         ? u("#big-swiper-video").hide()
         : u("#big-swiper-video").show(),
         d.find("a").click(function () {
