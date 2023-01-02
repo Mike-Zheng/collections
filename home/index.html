@@ -190,6 +190,24 @@
         <div class="img-box">
           <div id="j_photo_play">
             <div class="img_main" data-behavior-img>
+              <div class="g-video-box">
+                <!--     
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/VAV-4GhicyM" 
+                  data-videosource="1" 
+                  frameborder="0" 
+                  allowfullscreen="" 
+                  id="video-iframe"
+                >
+                </iframe> 
+                -->
+                <video width="100%" height="100%" controls>
+                  <source src="/collections/home/video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <img
                 style="display: inline"
                 src="/collections/home/images/house/166589593686288804.jpg!1000x.water2.webp"
@@ -197,11 +215,21 @@
                 title=""
                 title="PC端_新版詳情頁_輪播點擊查看大圖1"
               />
+              <div class="btn-swiper-video" id="big-swiper-video" style="display: none;">
+                <span class="video-icon-small"></span>
+                播放房屋影片
+              </div>
             </div>
             <div class="img_prev clearfix">
               <a class="prev_left" href="javascript:void(0)" title="PC端_新版詳情頁_輪播點擊上一頁1"> </a>
               <div class="img_list" id="img_list">
                 <ol style="left: 0px">
+                  <li class="">
+                    <a href="javascript:void(0)" class="is_video selected">
+                      <span class="" title="中古屋詳細頁_輪播小圖_點擊視頻"></span>
+                      <img src="/collections/home/images/house/hqdefault.jpg" alt="" width="118" height="88" title="PC端_新版詳情頁_輪播點擊小圖1">
+                    </a>
+                  </li>
                   <li class="">
                     <a href="javascript:void(0)">
                       <img
@@ -731,6 +759,15 @@
           <div class="house-pic-title">房屋圖片</div>
           <div class="house-pic-box">
             <div class="pic-box-item">
+              <img 
+                class="pic-box-img lazy"  
+                src="/collections/home/images/newload.gif" 
+                title="出售_新版列表詳細頁_查看大圖B" 
+                data-original="/collections/home/images/house/hqdefault.jpg"
+              >
+                <span class="video-icon" title="中古屋詳情頁_房屋圖片版塊_點擊播放"></span>
+              </div>
+            <div class="pic-box-item">
               <img
                 class="pic-box-img lazy"
                 src="/collections/home/images/newload.gif"
@@ -867,6 +904,11 @@
           </div>
           <div class="big-window">
             <ul class="big-picture-nails">
+              <li class="big-picture-li" title="出售_新版列表詳細頁_查看大圖-小圖">
+                <i class="ceng"> </i>
+                <img src="/collections/home/images/house/hqdefault.jpg" alt="" class="">
+                <span class="video-icon"></span>
+              </li>
               <li class="big-picture-li" title="出售_新版列表詳細頁_查看大圖-小圖">
                 <i class="ceng"> </i>
                 <img src="/collections/home/images/house/166589593686288804.jpg!400x300.webp" alt="" class="" />
@@ -1075,6 +1117,15 @@
     <script>
       // PhotoPlayer and lightbox
       var photoList = [
+       {
+          is_video: 1,
+          video_url: "http://www.youtube.com/embed/VAV-4GhicyM",
+          video_source: 1,
+          medium: "/collections/home/images/house/hqdefault.jpg",
+          small: "/collections/home/images/house/hqdefault.jpg",
+          src: "/collections/home/images/house/hqdefault.jpg",
+          big: '/collections/home/images/house/hqdefault.jpg'
+        },
         {
           src: '/collections/home/images/house/166589593686288804.jpg!x.water2.jpg',
           small: '/collections/home/images/house/166589593686288804.jpg!400x300.webp',

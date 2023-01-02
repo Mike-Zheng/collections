@@ -4905,4 +4905,7 @@ a.arrow-prev.disabled {
   background: #f78b26;
   color: #fff;
 }
-
+.g-video-box{
+  width: 100%;
+  height: 100%;
+}
